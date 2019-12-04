@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>zebra delivery</title>
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="js/calender/jquery-ui.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCQzJ9DJLTRjrxLkRk6jaSrvcc5BfDtWM&callback=initMap">
+    </script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body  onload="initMap()">
+<div class="loader"></div>
+<header>		
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-light my-header"> 
+			<div class="container">
+				<div class="col-12 col-md-6">
+					<h1 id="logo"><a href="#" title="zebra delivery"><img src="img/site_logo.png"></a></h1>
+					<div class="search-bar">
+						<input type="text" placeholder="Search.." name="search2">
+  						<button type="submit"><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto my-menu">
+								<li class="nav-item"> <a title="" class="nav-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="sr-only">(current)</span></a> </li>
+								<li class="nav-item"> <a title="" class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a> </li>
+								<li class="nav-item dropdown"> <a title="" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="img/user_img.jpg" title="user">  John Doe </a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a title="" class="dropdown-item" href="#"> <i class="fa fa-user" aria-hidden="true"></i> My Profile</a>
+										
+										<a title="" class="dropdown-item" href="#"> <i class="fa fa-cog" aria-hidden="true"></i> My Accountn</a>
+												
+										<a title="" class="dropdown-item" href="#"> <i class="fa fa-lock" aria-hidden="true"></i> Passward</a> 
+										
+										<a title="" class="dropdown-item" href="#"> <i class="fa fa-power-off" aria-hidden="true"></i> Log Out</a> 
+									</div>
+								</li>
+								
+						</ul>
+				</div>
+			    </div>
+		</nav>
+				</div>
+</header>
+<article>
+	<section class="sec-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-xl-4">
+						<div class="side-bar">
+							<!-- tabs Menu start -->
+							<ul class="sidebar_tab">
+								<li data-show="home">
+								  <a href="index.html" class="tab_icon">
+								  	<i class="fa fa-home"></i><span>Home</span>
+								  </a>
+								</li>
+								<li data-show="chat">
+								  <a href="customer-chatting.html" class="tab_icon">
+								  	<i class="fa fa-comments"></i><span>Chat</span>
+								  </a>
+								</li>
+								<li data-show="history">
+								  <a href="delivery.html" class="tab_icon active">
+								  	<i class="fa fa-file-text"></i><span>history</span>
+								  </a>
+								</li>
+								<li data-show="history">
+								  <a href="review-rate.html" class="tab_icon">
+								  	<i class="fa fa-life-ring"></i><span>Activity</span>
+								  </a>
+								</li>
+							</ul>
+						<!-- tabs Menu end -->
+						<!-- tab content start -->
+						<div class="tab_content">
+							<nav class="nav flex-column my-menu">
+							  <a class="nav-link active" href="delivery.html">New Delivery</a>
+							  <a class="nav-link" href="current-delivery.html">Currrent Deliveries</a>
+							  <a class="nav-link" href="delivery-history.html">Delivery History</a>
+							</nav>
+						</div>
+						<!-- tab content end -->
+						</div>
+					</div>
+					<div class="col-lg-8 col-xl-8">
+						<div class="custom-details">
+							<h2>New Delivery</h2>
+					  			<div class="row">
+								    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+								    	<div class="new_delivery">
+								    	 <div class="delivery-add">
+								    	 	<div id="map-layer"></div>
+								    	 </div>
+								    	 	<div class="select-delivery">
+								    	 		<input type="text" id="pick-from" placeholder="Pick From">
+								    	 		<input type="text" id="pick-from" placeholder="Enter Drop Location">
+								    	 	</div>
+								    	</div>
+								    </div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-xl-6">
+										<div class="details-list">
+											<h2>Type Of Vehicle</h2>
+											<div class="type-vehicle">
+												<select class="custom-select">
+												<option selected>Car</option>
+												<option value="1">Motorcycle</option>
+												<option value="2">Van</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-xl-6">
+										<div class="details-list">
+											<h2>Delivery Option</h2>
+											<div class="type-vehicle">
+												<select class="custom-select">
+												<option selected>2 Hour Delivery</option>
+												<option value="1">4 Hour Delivery</option>
+												<option value="2">Same Day Delivery</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-xl-4">
+										<div class="details-list">
+											<h2>Item Quantity</h2>
+											<div class="type-vehicle">
+												<select class="custom-select">
+												<option selected>1</option>
+												<option value="1">2</option>
+												<option value="2">3</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-8 col-xl-8">
+										<div class="details-list">
+											<h2>Item Description</h2>
+											<div class="type-vehicle">
+												<textarea class="form-control" rows="1" id="comment" placeholder="Description"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-xl-12">
+										<div class="details-list">
+											<h2>Item Ready At</h2>
+											<div class="type-vehicle">
+												<input type="text" id="datepicker" placeholder="MM/DD/YY" class="custom-date">
+												</input>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-xl-4">
+										<div class="next-btn">
+					    					<a href="#">Next</a>
+					    				</div>
+									</div>
+									<div class="col-lg-4 col-xl-4">
+										<div class="next-btn">
+					    					<a href="#">Check Price</a>
+					    				</div>
+									</div>
+									<div class="col-lg-4 col-xl-4">
+										<div class="next-btn">
+					    					<a href="#">Reset</a>
+					    				</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			  	</div>
+	</section>
+		
+</article>
+<footer>
+		<div class="container"> <a href="#" id="scroll" style="display: none;"><span></span></a> footer </div>
+</footer>
+
+<script>
+      	var map;
+		var waypoints
+      	function initMap() {
+        	  	var mapLayer = document.getElementById("map-layer"); 
+            	var centerCoordinates = new google.maps.LatLng(37.6, -95.665);
+        		var defaultOptions = { center: centerCoordinates, zoom: 4 }
+        		map = new google.maps.Map(mapLayer, defaultOptions);
+	
+            var directionsService = new google.maps.DirectionsService;
+            var directionsDisplay = new google.maps.DirectionsRenderer;
+            directionsDisplay.setMap(map);
+
+            $("#go").on("click",function() {
+            	    waypoints = Array('Khajrana, Indore, Madhya Pradesh','Palasia, Indore, Madhya Pradesh');
+            	  
+                	$('.way_points:checked').each(function() {
+                    waypoints.push({
+                        location: $(this).val(),
+                        stopover: true
+                    });
+                	});
+                var locationCount = waypoints.length;
+                if(locationCount > 0) {
+                    var start = waypoints[0].location;
+                    var end = waypoints[locationCount-1].location;
+                    drawPath(directionsService, directionsDisplay,start,end);
+                }
+            });
+            
+      	}
+        	function drawPath(directionsService, directionsDisplay,start,end) {
+            directionsService.route({
+              origin: start,
+              destination: end,
+              waypoints: waypoints,
+              optimizeWaypoints: true,
+              travelMode: 'DRIVING'
+            }, function(response, status) {
+                if (status === 'OK') {
+                directionsDisplay.setDirections(response);
+                } else {
+                window.alert('Problem in showing direction due to ' + status);
+                }
+            });
+      }
+	</script>
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/calender/jquery-ui.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

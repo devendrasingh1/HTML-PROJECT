@@ -1,0 +1,130 @@
+/*
+  Theme name: Variation6
+  Author: BANG! Media
+  Template: pa
+*/
+#body {
+  background: #f2f2f2;
+}
+#body {
+
+}
+.box {
+  -webkit-box-shadow: 0px 0px 40px 0px #eeeeee;
+  box-shadow: 0px 0px 40px 0px #eeeeee;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+h1 {
+  text-align: center;
+}
+h1 b {
+  font-size: 30px;
+  line-height: 38px;
+  color: #900;
+  font-family: Times;
+  display: block;
+}
+h2 {
+  text-align: center;
+  margin: 0 0 40px 0;
+  color: #900;
+}
+#image_main {
+  height: 618px;
+  border: 2px solid #111;
+}
+.button_primary_wrapper {
+  -webkit-border-radius: 40px;
+  border-radius: 40px;  
+} 
+.button_primary {
+  color: #FFF;
+  border: 2px solid #0069BA;
+  background: rgb(0,147,226); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(0,147,226,1) 0%, rgba(0,105,186,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,147,226,1)), color-stop(100%,rgba(0,105,186,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,147,226,1) 0%,rgba(0,105,186,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,147,226,1) 0%,rgba(0,105,186,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,147,226,1) 0%,rgba(0,105,186,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,147,226,1) 0%,rgba(0,105,186,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0093e2', endColorstr='#0069ba',GradientType=0 ); /* IE6-9 */
+}
+
+#rules li span {
+  width: 371px;
+}
+#webmasters_footer {
+  opacity: .5;
+  padding: 0 0 40px 0;
+}
+#agree_area {
+  text-align: center;
+}
+#agree_area b {
+  color: #0092E1;
+}
+#agree_area .step.question {
+  min-height: 130px;
+  padding: 20px;
+  background: #FFF;
+  margin: 20px 0 0 0;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; 
+  border: 1px solid #CCC;
+}
+#agree_area .button {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;  
+  padding: 12px 20px;
+  border: 1px solid #FFF;
+  font-weight: bold;
+  color: #FFF;
+}
+#agree_area .button.button_green {
+  background: rgb(210,255,82); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(210,255,82,1)), color-stop(100%,rgba(145,232,66,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 ); /* IE6-9 */
+  color: #007c00;
+  border: 1px solid #007c00;
+}
+#agree_area .button_red {
+  background: rgb(255,48,25); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,48,25,1)), color-stop(100%,rgba(207,4,4,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+  color: #470000;
+  text-shadow: 0px 0px 2px #FE2F18;
+  filter: dropshadow(color=#FE2F18, offx=0, offy=0);  
+  border: 1px solid #470000;
+}
+#rules {
+  text-align: left;
+}
+
+#verify {
+  margin: 0 0 20px 0;
+}
+.loader {
+  height: 50px;
+  background: url( '../images/loader_white.gif' ) center center no-repeat;
+}
+#verify li {
+  display: none;
+  margin: 0 0 10px 0;
+}
+#verify b {
+  color: #00bf00;
+}
+.verify_container .btn-primary {
+  display: none;
+}

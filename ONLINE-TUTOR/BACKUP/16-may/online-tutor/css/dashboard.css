@@ -1,0 +1,663 @@
+/*=========== Dashboard css start=========== */
+.text_green {
+    color: #7dc50f;
+}
+.text_red {
+    color: #fb245c;
+}
+.text_blue {
+    color: #2d5fed;
+}
+.text_orange {
+    color: #fc4c02;
+}
+.white_box {
+    background: #ffffff;
+    padding: 10px;
+}
+.dashboard_section {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.d_sidebar_wrapper {
+    float: left;
+    width: 100%;
+}
+.das_nav_toggle {
+    float: right;
+    background: #fc4c02;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 39px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+.dashboard_sidebar {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 6px 13px rgba(0, 0, 0, 0.11);
+}
+.dashboard_user {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 15px;
+    text-align: center;
+    background: #f1f1f1;
+}
+.dashboard_user .user_thumb {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    border-radius: 50%;
+}
+.dashboard_user .user_thumb img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.user_text h5 {
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.user_text p {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+/*=========== Dashboard css End =========== */
+/*=========== Dashboard nav css Start =========== */
+.dashboard_nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.dashboard_nav ul li {
+    position: relative;
+}
+.dashboard_nav > ul > li > a {
+    padding: 10px 20px;
+    display: block;
+    transition: all ease-in 0.25s;
+    -webkit-transition: all ease-in 0.25s;
+    -moz-transition: all ease-in 0.25s;
+    border-left: 3px solid transparent;
+}
+.dashboard_nav ul li a {
+    color: #58585b;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+	text-decoration:none;
+} 
+.dashboard_nav ul li a .icons {
+    padding-right: 11px;
+}
+.dashboard_nav > ul > li > a:hover, 
+.dashboard_nav > ul > li > a.active {
+    background: #f9f9f9;
+    border-left-color:#fc4c02;
+	text-decoration:none;
+}
+.dashboard_nav > ul > li > a:hover .icons, 
+.dashboard_nav > ul > li > a.active .icons{
+   color:#fc4c02;
+}
+.caret_down {
+    position: absolute;
+    right: 25px;
+    top: 6px;
+    font-size: 20px;
+}
+.dashboard_nav > ul > li > ul {
+    padding-left: 32px;
+    display: none;
+}
+.dashboard_nav > ul > li > ul > li > a {
+    padding: 7px 20px;
+    display: block;
+}
+.dashboard_nav > ul > li > ul > li > a:hover, 
+.dashboard_nav > ul > li > ul > li > a.active {
+    color: #fc4c02;
+}
+/*=========== Dashboard nav css End =========== */
+/*=========== Dashboard calendar css start =========== */
+.monthly-header .monthly-prev, 
+.monthly-header .monthly-next {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    background: #fc4c02;
+    color: #fff;
+}
+.monthly-header .monthly-prev:after, 
+.monthly-header .monthly-next:after {
+	border-color: #fff;
+	margin: -4px 0 0 -4px;
+}
+.monthly-header .monthly-header-title a {
+    color: #fc4c02 !important;
+    background: transparent !important;
+    border: 1px solid #fc4c02 !important;
+    padding: 3px 15px !important;
+    height: auto !important;
+    line-height: initial !important;
+}
+.monthly-header .monthly-header-title a:hover{
+	color: #ffffff !important;
+    background: #fc4c02 !important;
+    border: 1px solid #fc4c02 !important;
+}
+.monthly-day-title-wrap {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.monthly-day-title-wrap div {
+    color: #fc4c02;
+}
+.event_calendar_dv .monthly-event-list {
+    top: 39px;
+}
+/*=========== Dashboard calendar css End =========== */
+/*=========== Dashboard content css Start =========== */
+.dashboard_content_part{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    position: relative;
+    max-width: 100%;
+}
+.dashboard_content{
+
+}
+.dashboard_heading {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    background: #fff;
+    padding: 14px 10px;
+    border-left: 4px solid #fc4c02;
+}
+.dashboard_heading h4 {
+    display: inline-block;
+    font-size: 18px;
+    color: #202020;
+    line-height: 21px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+.dash_head_right{
+    float: right;
+}
+.dash_head_right .site_button {
+    border-radius: 4px;
+    height: 38px;
+    line-height: 36px;
+}
+.dashboard_heading .search_form {
+    float: right;
+    width: 200px;
+}
+.search_heading h4 {
+    margin-top: 10px;
+}
+.search_form {
+    display: inline-block;
+}
+.search_form input {
+    font-size: 13px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #000;
+}
+.search_form .form_group {
+    position: relative;
+}
+.search_form button {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    background: none;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    font-size: 13px;
+    color: #fc4c02;
+}
+/*=========== Dashboard content css End =========== */
+/*=========== Dashboard Form css Start =========== */
+.dashboard_form {
+	background-color: #ffffff;
+	padding: 15px;
+}
+.dashboard_form .upload_user_img {
+    margin-bottom: 15px;
+}
+.upload_user_img .label span {
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.dashboard_form .form_group label {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.dashboard_form .form_group{
+}
+.dashboard_form .input_group {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+.dashboard_form input, 
+.dashboard_form select, 
+.dashboard_form textarea {
+    font-size: 14px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #555;
+}
+.dashboard_form input[type="checkbox"], 
+.dashboard_form input[type="radio"] {
+    width: auto;
+    height: auto;
+    border-bottom: none;
+}
+.dashboard_form textarea {
+    height: 95px;
+    padding-top: 10px;
+    resize: none;
+}
+.dashboard_form .profile_btns .buttons {
+    display: inline-block;
+    width: auto;
+    padding: 0 30px;
+    border: 1px solid #fc4c02;
+    color: #fff;
+    background-color: #fc4c02;
+}
+.dashboard_form .profile_btns .buttons:hover, 
+.dashboard_form .profile_btns .buttons:focus{
+    border: 1px solid #fc4c02;
+    color: #fc4c02;
+	background-color:transparent;
+}
+.new_row {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.dashboard_form .new_row input {
+    padding-right: 20px;
+}
+.new_row .field_btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    float: right;
+    background: #fc4c02;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    cursor: pointer;
+}
+.new_row .remove_field {
+    background: red;
+}
+.schedule_calander .ui-datepicker {
+    width: 100%;
+}
+.event_calendar_dv{
+	
+}
+.monthly-today .monthly-day-number {
+    color: #FFF;
+    background: #fc4c02;
+    border-radius: 50%;
+    top: 0.08em;
+    left: 0.05em;
+    font-size: 0.9em;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+/*=========== Dashboard Form css End =========== */
+/*=========== Dashboard table css start =========== */
+.dashboard_table table tr th {
+    font-weight: normal;
+    color: #222222;
+    border-bottom: 1px solid #eeeeee;
+    border-top: none;
+}
+.dashboard_table table tr td {
+    color: #777;
+    font-size: 13px;
+    padding: 15px 8px;
+    border-bottom: 1px solid #eeeeee;
+    border-top: none;
+    vertical-align: middle;
+}
+.dashboard_table table tr{
+    transition: all ease-in 0.25s;
+    -webkit-transition: all ease-in 0.25s;
+    -moz-transition: all ease-in 0.25s;
+}
+.dashboard_table table tbody tr:hover {
+    background-color: #f0f5fb;
+}
+.status_txt{
+    text-transform: capitalize;
+}
+.dashboard_table table tr td > h5 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+.dashboard_table table tr td .sub_title{
+    color:#a2a2a2;
+    font-size:13px;
+}
+.dashboard_table table tr td .sub_title i{
+    padding-right:8px
+}
+.dashboard_table table tr td.applicat_td a {
+    color: #000;
+    text-decoration: underline;
+}
+.dashboard_table table tr td.applicat_td a:hover{
+    color: #7dc50f;
+}
+.action_btns a {
+    display: inline-block;
+    margin: 0 2px;
+    font-size: 19px;
+    position: relative;
+}
+.action_btns a:hover {
+    color: #000000;
+}
+.a_tooltip {
+    position: absolute;
+    font-size: 11px;
+    left: 50%;
+    white-space: nowrap;
+    padding: 2px 5px;
+    background-color: #000;
+    border-radius: 1em;
+    top: -19px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    color: #ffffff;
+    transition: all ease-in-out 0.25s;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+}
+.a_tooltip:after {
+    position: absolute;
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    margin-bottom: -5px;
+}
+.action_btns a:hover .a_tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -25px;
+    backface-visibility: hidden;
+}
+/*=========== Dashboard table css End =========== */
+/*=========== Messgae  css start =========== */
+.message_tbl table tr td, .message_tbl table tr th {
+    text-align: center;
+}
+.message_tbl tr td .tutor_img {
+    display: inline-block;
+    width: 50px;
+	margin-bottom:4px;
+}
+.message_tbl tr td .tutor_img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.message_tbl tr td p {
+    margin-bottom: 0;
+    color: #000;
+}
+
+.chat_view_btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fc4c02;
+    color: #fc4c02;
+    border-radius: 2em;
+    padding: 6px 14px;
+    line-height: 12px;
+    font-size: 13px;
+}
+.chat_view_btn i {
+    margin-right: 3px;
+}
+.chat_view_btn:hover {
+	text-decoration: none;
+    border: 1px solid #fc4c02;
+    background:#fc4c02;
+    color: #ffffff;
+}
+/*=========== Messgae css End =========== */
+/*=========== chat page css start =========== */
+.chat_box_frame {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+}
+.chat_contact_head{
+	width: 100%;
+	display:inline-block;
+	background: #fc4c02;
+}
+.contact_profile {
+   float:left;
+    width: 100%;
+    padding: 10px;
+}
+.contact_profile .thumb {
+    width: 45px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.contact_profile .thumb img {
+    border-radius:50%;
+}
+.contact_profile .profile_dtl {
+    padding-left: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.profile_dtl h5 {
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+	text-transform:capitalize;
+}
+/*chat window css*/
+
+.chat_window {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    min-height: 320px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.chat_window ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+.chat_window ul li {
+    float: left;
+    width: 100%;
+    margin: 14px 0;
+}
+.chat_usr_list {
+    display: inline-block;
+    width: 100%;
+}
+.chat_usr_thumb {
+    width: 70px;
+    display: inline-block;
+}
+.chat_usr_thumb img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.chat_usr_left .chat_usr_thumb {
+    float: left;
+}
+.chat_usr_left .chat_usr_msg_wrap {
+    padding-left: 90px;
+}
+.chat_usr_right .chat_usr_thumb {
+    float: right;
+}
+.chat_usr_right .chat_usr_msg_wrap {
+    padding-right: 90px;
+    text-align: right;
+}
+.chat_usr_msg {
+    display: inline-block;
+}
+.chat_usr_box p {
+    margin-bottom: 0;
+    color: #222;
+}
+.chat_usr_left .chat_usr_box {
+    min-width: 100px;
+    padding: 7px 18px;
+    background-color: #f0f0f0;
+    color: #000;
+    border-radius: 0em 2em 2em 2em;
+}
+.chat_usr_right .chat_usr_box {
+    min-width: 100px;
+    padding: 7px 18px;
+    background-color: #fc4c02;
+    color: #fff;
+    border-radius: 2em 0em 2em 2em;
+}
+.chat_usr_right .chat_usr_box p {
+    color: #ffffff;
+}
+.chat_date_time {
+    margin-top: 7px;
+}
+.chat_date_time span {
+    display: inline-block;
+    font-size: 14px;
+    color: #a2a2a2;
+	margin-right:5px;
+}
+.chat_date_time .chat_usr_name {
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+}
+/*chat window css*/
+
+
+
+.chat_footer {
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px 20px;
+}
+.chat_ftr_form{
+	position:relative;
+}
+.chat_ftr_form .chat_input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 0 60px;
+    color: #555;
+}
+.chat_ftr_form .chat_button {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fc4c02;
+    border: 1px solid #fc4c02;
+    background: transparent;
+    font-size: 17px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+}
+.chat_ftr_form .chat_button:hover {
+    background: #fc4c02;
+    color: #ffffff;
+}
+.chat_attach_btn input{
+	display:none;
+}
+
+.chat_ftr_form .chat_attach_btn {
+    left: 10px;
+}
+
+.chat_ftr_form .chat_send {
+    right: 10px;
+}
+/*=========== chat page css End =========== */

@@ -1,0 +1,206 @@
+.left_prof_part {
+    float: left;
+    width: 100%;
+}
+/*user css start*/
+.profile_cover_2 {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px 11px;
+}
+.profile_cover_2 .profile_img{
+	width: 80px;
+    text-align: center;
+}
+.profile_btn_2 {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 4px;
+    background: #ff85c2;
+    border: 1px solid #ff85c2;
+    color: #fff;
+    padding: 5px 11px;
+    border-radius: 50px;
+    font-size: 13px;
+}
+.profile_btn_2 i{
+    margin-right: 5px;
+}
+.profile_btn_2:hover{
+    color:#ff85c2;
+    background-color: transparent;
+}
+.btm_dv .status_dv {
+    margin-top: 4px;
+}
+.profile_2_info{
+	padding-left: 80px;
+}
+.profile_2_info_inr {
+    width: 100%;
+    display: inline-block;
+    padding-left: 15px;
+}
+.user_info_text_2 h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #ff85c2;
+    margin-bottom: 3px;
+}
+.user_info_text_2 .location {
+    color: #c8c8c8;
+    font-size: 13px;
+    font-weight: 400;
+}
+.user_info_text_2 .location i {
+    margin-right: 4px;
+}
+.user_info_text_2 .age_dv {
+    margin-bottom: 7px;
+}
+.prof2_looking_box{
+    border-top: 1px solid #F0F0F0;
+}
+.looking_text h4 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.looking_text p {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.user_info_text_2 .profile_btn_2 {
+    height: 30px;
+    line-height: 28px;
+    font-size: 13px;
+    padding: 0 17px;
+}
+/*user css End*/
+/* Hobby css Start */
+.profile_2_hobby {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+.hobby_list li {
+    font-size: 15px;
+    border-bottom: 1px solid #F0F0F0;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+}
+.hobby_list li .hobi_icon {
+    margin-right: 9px;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    font-size: 15px;
+}
+/* Hobby css End */
+.profile_about_part{
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.profile_about_part h3 {
+    color: #000000;
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 21px;
+}
+.profile_about_part p {
+    color: #999;
+    line-height: 26px;
+}
+/*==== profile gallery css ====*/
+.pro_gallery_slider_wrap{
+    display: inline-block;
+    width: 100%;
+}
+.gallery_slider{
+    float: left;
+    width: 100%;
+}
+.gallery_slider .gallery_item img {
+    border-radius: 5px;
+}
+.gallery_slider_thumb {
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.gallery_item_icon {
+    display: inline-block;
+    width: 70px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.owl-item.active.current .gallery_item_icon {
+    border-color: #ff85c2;
+}
+.gallery_item_icon:first-child{
+    margin-left: 0;
+}
+.gallery_item_icon img {
+    border-radius: 5px;
+}
+.gallery_slider .owl-nav > button {
+    background-color: #ffffff !important;
+    width: 40px;
+    height: 40px;
+    line-height: 40px !important;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    font-size: 29px !important;
+    color: #999999 !important;
+}
+.gallery_slider .owl-nav .owl-prev {
+    left: 20px;
+}
+.gallery_slider .owl-nav .owl-next {
+    right: 20px;
+}
+/*==== profile gallery css ====*/
+/*==== gallery panel css ====*/
+.prof_2_gallery_panel .gallery_bg {
+    text-align: center;
+}
+.prof_2_gallery_panel .gallery_icon {
+    float: none;
+    display: inline-block;
+}
+.prof_2_gallery_panel .gallery-title {
+    width: 100%;
+}
+/*==== gallery panel css ====*/
+.chat_form{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.chat_form input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dddddd;
+    padding: 0 34px 0 10px;
+}
+.chat_form .chatsnd_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    border: none;
+    background-color: #ff85c2;
+    color: #fff;
+    padding: 0 10px;
+}

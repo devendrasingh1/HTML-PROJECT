@@ -1,0 +1,660 @@
+@media screen and (max-width:1199px) {
+	.profile_box h3{
+		font-size: 19px;
+	}
+	.profile_box p {
+	    font-size: 14px;
+	}
+}
+@media screen and (max-width:1200px) {
+	.gallery_bg {
+	    text-align: center;
+	}
+	.gallery_icon {
+	    float: none;
+	    display: inline-block;
+	}
+	.gallery-title {
+	    width: 100%;
+	}
+}
+@media screen and (min-width:768px) {
+	.tab-button-outer {
+		position: relative;
+		z-index: 2;
+		display: block
+	}
+	.tab-select-outer {
+		display: none
+	}
+	.tab-contents {
+		position: relative;
+		top: -1px;
+		margin-top: 0
+	}
+}
+@media only screen and (max-width:990px) {
+	.navbar .nav-title {
+		display: none
+	}
+}
+@media(max-width: 767px) {
+	#main-slider h1 {
+		font-size: 40px;
+		line-height: 48px;
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+	.section-title.row {
+		width: 100%;
+	}
+	.section-title h2 {
+		font-size: 36px;
+	}
+	.banner-form .btn-primary {
+		font-size: 14px;
+	}
+	header .pull-right {
+		float: none!important;
+	}
+	header .dropdown-toggle {
+		margin: 0px;
+	}
+	.pull-right>.dropdown-menu {
+		left: 0;
+	}
+	#mood_option {
+		width: auto;
+	}
+	.mood_option_outer .mood_radio {
+		width: 50%;
+		text-align: center;
+	}
+	.dropdown-menu#search_profile_option {
+		position: initial;
+	}
+	#search_profile_option {
+		width: auto;
+		height: auto;
+	}
+	#search_profile_option form select {
+		padding: 10px 12px;
+	}
+	label {
+		font-size: 12px;
+	}
+	.dropdown-menu {
+		float: none!important;
+	}
+	#search_profile_option form select {
+		font-size: 10px;
+		background: none;
+	}
+	#search_profile_option form select.trackable {
+		padding: 10px 25px 10px 10px;
+	}
+	.dropdown-backdrop {
+		position: initial;
+	}
+	.col-md-6.age_field {
+		margin-top: 10px;
+	}
+	svg {
+		width: 30px;
+	}
+	.dropdown.pull-right.tbtwodrop {
+		text-align: right;
+	}
+	nav.navbar.pull-right ul {
+		text-align: center;
+	}
+	.row.ask_question {
+		width: 100%;
+	}
+	.sign-in-up .modal-dialog {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.sign-in-up #login-google {
+		width: auto;
+	}
+	.sign-in-up .modal-content {
+		padding: 0;
+	}
+	.registration_panel {
+		text-align: center;
+	}
+	.SettingsListLink span.setting_action, .SettingsListLink span, .SettingsListLink span.setting_action {
+		text-align: center;
+		display: block;
+	}
+	.Settings_detail table td {
+		padding: 5px;
+		display: block;
+	}
+	.Settings_detail button {
+		margin: 5px 10px;
+	}
+	.user_search_inner {
+		width: auto;
+	}
+	.user_search_inner input[type=search] {
+		width: 100%;
+	}
+	.user_search_inner button {
+		float: none;
+		padding: 10px 14px 10px 14px;
+	}
+	.user_search_inner button::before {
+		display: none;
+	}
+	.user_search_inner input[type=search] {
+		width: auto;
+		float: none;
+	}
+	.profile-user-information {
+		width: auto;
+		padding: 25px 25px 25px 25px;
+		margin-top: 30px;
+	}
+	.row.send-box-panel {
+		float: none;
+		width: auto;
+	}
+	.send-box {
+		padding: 30px 30px 30px 60px;
+		text-align: right;
+	}
+	.send-box.send-email, .send-box.send-gift {
+		background-size: 25%;
+	}
+	.send-box-panel .col-md-6 {
+		padding: 0px 15px;
+	}
+	.row.gallery-box-panel, .row.user_about_info, .search_detail #search-page {
+		float: none;
+		width: auto;
+	}
+	.gallery_bg, .user_about_info_inner {
+		margin-bottom: 15px;
+	}
+	.search_list_outer .pad_0 {
+		padding: 0px 15px
+	}
+	.gallery-box-panel .col-md-4, .user_about_info .col-md-4, #search-page .col-md-4 {
+		padding: 0px 15px;
+	}
+	#search-page h5 {
+		margin: 0px 0px 10px;
+	}
+	.faq-feature .col-md-3 {
+		padding: 0px 15px;
+		margin-bottom: 15px;
+	}
+	.faq_list_panel .row.ask_question {
+		padding: 20px 0px;
+		margin: 0px;
+	}
+	.send-box.send-email {
+		margin-bottom: 10px;
+	}
+	.inbox_img img {
+		width: auto;
+	}
+	.inbox_outer .table>tbody>tr>td {
+		vertical-align: text-top;
+	}
+	#reply-modal .modal-dialog {
+		width: auto;
+	}
+	.user_about_info_inner {
+		min-height: auto;
+	}
+	.profile-user-information {
+		background-size: 16%;
+	}
+	.user_search_inner {
+		float: none;
+	}
+	.hobbies_div_col {
+	    width: 50%;
+	}
+}
+@media(max-width: 767px){
+	.slide_13_left, .slide_13_right {
+	    float: left;
+	    width: 100%;
+	}
+	.landing_frm_heading h3 {
+	    font-size: 23px;
+	    margin-bottom: 5px;
+	    line-height: 26px;
+	}
+	.landing_frm_heading h4 {
+	    font-size: 17px;
+	}
+	.right_cover {
+	    background-color: #fdb30a;
+	}
+	.right_bnr_img {
+	    width: 40%;
+	    float: none;
+	    display: table-cell;
+	    vertical-align: middle;
+	}
+	.banner_img_txt {
+	    width: 60%;
+	    display: table-cell;
+	    float: none;
+	    vertical-align: middle;
+	    padding: 16px 20px;
+        background: transparent;
+	}
+	.dating_slide_14 .slide_box {
+	    text-align: center;
+	}
+	.dating_slide_14 .column_50 {
+	    display: inline-block;
+	    width: 100%;
+	}
+	.dating_slide_14 .banner_left_img {
+	    display: inline-block;
+	    margin-bottom: 30px;
+	}
+}
+@media(min-width: 768px) and (max-width: 991px) {
+	#main-slider h1 {
+		font-size: 50px;
+		line-height: 80px;
+		margin-bottom: 30px;
+	}
+	header .dropdown-toggle {
+		margin: 0;
+	}
+	.navbar>ul>li:last-child a {
+		padding: 8px 12px;
+	}
+	#mood_option {
+		width: auto;
+	}
+	svg {
+		width: 30px;
+	}
+	.mood_option_outer .mood_radio {
+		width: 50%;
+		text-align: center;
+	}
+	#search_profile_option {
+		width: 300px;
+		margin-top: 20px;
+	}
+	#search_profile_option form select {
+		background: none;
+	}
+	#search_profile_option, .inbox_outer .modal-body {
+		height: auto;
+	}
+	.presence_status label {
+		font-size: 12px;
+		margin-left: 8px;
+	}
+	.col-md-6.age_field {
+		margin-top: 10px;
+	}
+	.pull-right>.dropdown-menu {
+		margin-top: 20px;
+	}
+	ul#mood_option {
+		margin-top: 15px;
+	}
+	.faq-feature-inner .faq-icon {
+		margin: 0;
+	}
+	.row.ask_question {
+		width: 80%;
+	}
+	.user_search_inner, .user_search_inner input[type=search] {
+		width: 100%;
+	}
+	.gallery_bg, .user_about_info_inner {
+		margin-bottom: 15px;
+	}
+	.faq-feature .col-md-3 {
+		padding: 0px 15px;
+		margin-bottom: 15px;
+	}
+	.user_about_info_inner {
+		min-height: auto;
+	}
+	.send-box.send-email {
+		margin-bottom: 10px;
+	}
+	.chat-user-btn {
+		width: 25%;
+	}
+	.user_search_inner {
+		width: auto;
+		display: inline;
+	}
+	.user_search_inner input[type=search] {
+		width: auto;
+		display: inline;
+		float: none;
+	}
+	.user_search_inner button, .user_search_inner {
+		float: none;
+	}
+	.chat-user-btn button {
+		padding: 4px 8px;
+		font-size: 12px;
+	}
+}
+@media(max-width: 991px) {
+	.form-inner, .form-inner .form-group {
+		float: none;
+	}
+	.navbar .nav-title {
+		display: block;
+	}
+	.navbar>ul>li {
+		margin-left: 15px;
+	}
+	.search_faq h4 {
+		text-align: left;
+	}
+	.pro_gallery_slider_wrap {
+	    margin-top: 30px;
+	}
+	.gallery_slider_thumb .item {
+	    text-align: center;
+	}
+	.dating_slider_bg_2 {
+	    background: url(../land_assets/images/slide/slide_bg_2.jpg) center no-repeat;
+	    background-size: cover;
+	    position: relative;
+	    padding: 40px 0;
+	}
+	.skew_design{
+		width: 70%;
+	}
+}
+@media(min-width: 992px) and (max-width: 1024px) {
+	#search_profile_option .col-md-6 {
+		width: 100%;
+	}
+	#search_profile_option {
+		width: 350px;
+	}
+	#search_profile_option, .inbox_outer .modal-body {
+		height: auto;
+	}
+	#search_profile_option form select {
+		background: none;
+	}
+	.col-md-6.age_field {
+		margin-top: 10px;
+	}
+	ul#search_profile_option {
+		margin-top: 20px;
+	}
+	#mood_option {
+		margin-top: 15px;
+	}
+	.navbar>ul>li {
+		margin-left: 15px;
+	}
+	.chat-user-btn {
+		width: 25%;
+	}
+	.chat-user-btn button {
+		padding: 4px 8px;
+	}
+	.send-box a {
+		padding: 10px 9px;
+		font-size: 12px;
+	}
+	.send-box a i {
+		font-size: 19px;
+	}
+	.user_about_info_inner h4 {
+		font-size: 20px;
+	}
+	.user_search_inner {
+		width: auto;
+		display: inline;
+	}
+	.user_search_inner input[type=search] {
+		width: auto;
+		display: inline;
+		float: none;
+	}
+	.user_search_inner button, .user_search_inner {
+		float: none;
+	}
+}
+@media only screen and (max-width:990px){
+    .box_casual{ margin-bottom: 30px; }
+}
+@media only screen and (max-width:480px){
+    .box_casual:hover .icon1{ left: 27%; }
+    .box_casual:hover .icon2{ right: 27%; }
+}
+@media(max-width: 767px){
+	.outer_wrapper{width: 100%;}
+	.boxdate{margin: 0px;}
+	.box_casual{margin-bottom: 15px;}
+	.bold_cont h3{font-size: 20px;}
+	.boldbtn {margin-top: 0px;}
+	section#main-slider.main-slider2{padding: 30px 0px 120px;}
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.outer_wrapper{width: 100%;}
+	.box_casual {margin-bottom: 0px;}
+	section#main-slider.main-slider2 {
+    padding-bottom: 120px;padding-top: 50px;}
+}
+@media(max-width:767px){
+	.banner_form_inner .width_50, 
+	.banner_form_inner .width_30 {
+	    width: 100%;
+	    padding: 0;
+	}
+	.popup_dialog {
+	    margin: 20px auto;
+	}
+	.upoload_row .upload_photo {
+	    margin-bottom: 12px;
+	}
+	.slide_box_2{
+		background: rgba(255, 255, 255, 0.33);
+		text-align: center;
+	}
+	.slide_box_2 .banner-form{
+		background-color: transparent;
+	}
+	.slide_form_11 .banner-form {
+	    background-color: rgba(0, 0, 0, 0.41);
+	}
+	.slide_box_2 .col_43 {
+	    width: 40%;
+	    display: inline-block;
+	    float: none;
+	}
+	.slide_box_2 .col_57 {
+	    width: 100%;
+	}
+	.slide_box_2 .col_50{
+		width: 100%;
+	}
+	.slide_form_12 .banner_left_img {
+	    height: 110px;
+	    display: inline-block;
+	    float: none;
+	}
+	.slide_form_12 .banner_left_img img {
+	    object-fit: cover;
+	    width: 110px;
+	    height: 110px;
+	    border-radius: 50%;
+	}
+
+	.slide_form_12 .slide_box .banner-form {
+	    padding: 0;
+	    display: block;
+	    margin-top: 25px;
+	}
+	.profile_column {
+	    padding: 0 10px;
+	}
+}
+
+@media(max-width:600px){
+	.profile_img {
+	    width: 130px;
+	}
+	.profile_cover_1 .status_dv {
+	    width: 100%;
+	    text-align: center;
+	}
+	.status {
+	    padding: 4px 9px;
+	}
+	.profile_user_info {
+	    padding-left: 130px;
+	}
+	/*== Testimonial css Start ==*/
+	.tesimonial_box {
+	    text-align: center;
+	}
+	.tesimonial_box .tuser_img {
+	    display: inline-block;
+	}
+	.testimonials_content {
+	    display: block;
+	    padding-top: 30px;
+	    padding-left: 0;
+	    text-align: center;
+	}
+	.testimonials_inner:before {
+	    border-right: 15px solid transparent;
+	    border-left: 15px solid transparent;
+	    border-top: inherit;
+	    border-bottom: 15px solid #ff85c2;
+	    left: 50%;
+	    top: 0;
+	}
+	/*== Testimonial css End ==*/
+	.profile_column {
+    	padding: 0 7px;
+	}
+	.profile_box{
+		padding: 10px;
+	}
+}
+@media(max-width:550px){
+	.popup_dialog {
+	    width: 92%;
+	}
+}
+@media(max-width:500px){
+	.hobbies_div_col {
+	    width: 100%;
+	}
+}
+@media(max-width:480px){
+	.profile_column {
+	    padding: 0 5px;
+	}
+	.profile_box {
+	    padding: 10px 9px;
+	}
+	.profile_box .user_img img {
+	    width: 130px;
+	    height: 130px;
+	}
+	.profile_box h3 {
+	    font-size: 16px;
+	}
+	.profile_box .pro_age {
+	    font-size: 13px;
+	}
+	.profile_box p {
+	   font-size: 12px;
+	}
+	.headline h1 {
+	    font-size: 26px;
+	}
+	.slide_form_13 .banner-form {
+	    background-color: #fff;
+	    padding: 11px 15px 15px;
+	}
+	.banner_img_txt {
+	    padding: 10px 10px;
+	}
+	.banner_img_txt ul li {
+	    font-size: 13px;
+	    padding: 6px 0;
+	}
+	.banner_img_txt ul li .lst_icons {
+	    width: 15px;
+	    height: 15px;
+	    line-height: 14px;
+	    font-size: 10px;
+	    margin-right: 4px;
+	}
+}
+@media(max-width:460px){
+	.gallery-box-panel .col-xs-6 {
+	    width: 100%;
+	}
+}
+@media(max-width:420px){
+	.profile_box p {
+	    font-size: 11px;
+	}
+	.banner_form_inner .form_input select, 
+	.banner_form_inner .form_input input, 
+	.banner_form_inner .form_input textarea {
+	    padding: 0 7px;
+	}
+}
+@media(max-width:360px){
+	.slide_box .date_bg h2 {
+	    font-size: 20px;
+	    line-height: 25px;
+	}
+	.banner_form_inner .form_input select, 
+	.banner_form_inner .form_input input, 
+	.banner_form_inner .form_input textarea{
+		padding: 0 10px;
+		font-size: 13px;
+	}
+	.terms_group .check_box .c_text {
+	    margin-left: 22px;
+	}
+	.slide_form_13 .form_group .control-label {
+	    display: none;
+	}
+	.slide_form_13 .form_group .form_input {
+	    padding-left: 0;
+	    width: 100%;
+	}
+	.landing_frm_heading h3 {
+	    font-size: 18px;
+	    line-height: 22px;
+	}
+	.landing_frm_heading h4 {
+	    font-size: 15px;
+	}
+}
+@media(max-width:330px){
+	.slide_form_13 .banner-form .gender_col {
+		width: 100%;
+	}
+}
+@media(max-width:320px){
+	.profile_column {
+	    padding: 0 10px;
+	    width: 100%;
+	}
+}

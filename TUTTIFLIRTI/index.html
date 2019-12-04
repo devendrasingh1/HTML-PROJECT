@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>TuttiFlirti</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="description" content="">
+	<meta name="Keyword" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" type="image/icon" href="images/fevicon.png">
+	<link href="css/main.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+	<!-- slider End -->
+	<div class="home_slider_section">
+		<!-- header Start -->
+		<div class="header_section">
+			<div class="container">
+				<!-- button start -->
+				<div class="row">
+					<div class="col-sm-12 col-12">
+						<div class="logo_left">
+							<a href="">
+								<img src="images/site_logo.png" class="img-fluid" alt="logo">
+							</a>
+						</div>
+						<div class="header_right">
+							<ul class="login_tabs">
+								<li><a class="active login_link" href="javascript:void(0);" data-tab="signin_popup">signin</a></li>
+								<li><a class="login_link" href="javascript:void(0);" data-tab="signup_popup">signup</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- button end -->
+				<!-- popup start -->
+				<div class="login_popup_wrapper">
+					<!-- login start -->
+					<div class="login_popup login_content active" id="signin_popup">
+						<div class="login_form">
+							<h4 class="form_heading">Login To Your Account</h4>
+							<form>
+								<div class="form_group">
+									<input type="email" id="" placeholder="Email">
+								</div>
+								<div class="form_group">
+									<input type="password" id="" placeholder="Password">
+								</div>
+	                            <div class="form_group forgot_text">
+	                                <a class="forgot_link login_link" href="javascript:void(0);" data-tab="forgot_popup"><span>Forgot Password</span></a>
+	                          	</div>
+								<div class="form_group">
+	                                <button type="submit" class="submit_btn"><span>Sign In </span></button>
+	                            </div>
+							</form>
+						</div>
+					</div>
+					<!-- login End -->
+					<!-- signup start -->
+					<div class="login_popup login_content" id="signup_popup">
+						<div class="login_form">
+							<h4 class="form_heading">Please Create An Account</h4>
+							<form>
+								<div class="form_group">
+									<select>
+										<option value="">Select year of Birth</option>
+										<option value="">2001</option>
+										<option value="">2000</option>
+										<option value="">1999</option>
+										<option value="">1998</option>
+										<option value="">1997</option>
+										<option value="">1996</option>
+									</select>
+								</div>
+								<div class="form_group">
+									<input type="email" id="" placeholder="Email">
+								</div>
+								<div class="form_group">
+									<input type="password" id="" placeholder="Password">
+								</div>
+	                            <div class="form_group terms_group">
+	                                <div class="check_box">
+	                                	<label>
+	                                		<input type="checkbox" name="terms" value="terms&condition">
+	                                		<span class="c_box"></span>
+	                                		<span class="c_text">I Accept The <a href="#" target="_blank"> Terms & Conditions</a> & <a href="#" target="_blank"> Privacy Policy</a></span>
+										</label>
+	                                </div>
+	                          	</div>
+								<div class="form_group">
+	                                <button type="submit" class="submit_btn"><span>Sign In </span></button>
+	                            </div>
+							</form>
+						</div>
+					</div>
+					<!-- signup End -->
+					<!-- Forgot start -->
+					<div class="login_popup login_content" id="forgot_popup">
+						<div class="login_form">
+							<h4 class="form_heading">Enter Your Registered Email Id</h4>
+							<form>
+								<div class="form_group">
+									<input type="email" id="" placeholder="Email">
+								</div>
+								<div class="form_group">
+	                                <button type="submit" class="submit_btn"><span>Reset Password</span></button>
+	                            </div>
+							</form>
+						</div>
+					</div>
+					<!-- Forgot End -->
+				</div>
+				<!-- popup End -->
+			</div>
+		</div>
+		<!-- header End -->
+	</div>
+	<!-- slider End -->
+	<!-- banner form section start -->
+	<div class="home_banner_wrap">
+		<div class="banner_inner">
+	          <form class="form-inner" onsubmit="return onSearch()" method="get" action="https://www.bemyfling.com/search">
+	          <div class="home_banner_frm">
+	              <div class="form_left">
+	                  <div class="form_group_wrap">
+	                      <div class="form_group">
+	                          <label class="control_label">I am a</label>
+	                          <div class="form_input">
+	                             <span class="radio_btn">
+	                               <input type="radio" name="gender" id="male" value="male" checked="">
+	                               <label for="male">
+	                               	 <img class="img_1" src="images/icon/male.png" alt="">
+	                               	 <img class="img_2" src="images/icon/male_red.png" alt="">
+	                               </label>
+	                             </span>
+	                             <span class="radio_btn">
+	                               <input type="radio" name="gender" id="female" value="female">
+	                               <label for="female">
+	                               	 <img class="img_1" src="images/icon/female.png" alt="">
+	                               	 <img class="img_2" src="images/icon/female_red.png" alt="">
+	                               </label>
+	                             </span>
+	                          </div>
+	                      </div>
+	                      <div class="form_group">
+	                          <label class="control_label">Seeking a</label>
+	                          <div class="form_input">
+	                             <span class="radio_btn">
+	                               <input type="radio" name="gender" id="s_male" value="male">
+	                               <label for="s_male">
+	                               	 <img class="img_1" src="images/icon/male.png" alt="">
+	                               	 <img class="img_2" src="images/icon/male_red.png" alt="">
+	                               </label>
+	                             </span>
+	                             <span class="radio_btn">
+	                               <input type="radio" name="gender" id="s_female" value="female" checked="">
+	                               <label for="s_female">
+	                               	 <img class="img_1" src="images/icon/female.png" alt="">
+	                               	 <img class="img_2" src="images/icon/female_red.png" alt="">
+	                               </label>
+	                             </span>
+	                          </div>
+	                      </div>
+	                      <div class="form_group">
+	                          <label class="control_label">Age</label>
+	                          <div class="form_input">
+	                              <div class="select_age">
+	                                  <select name="min_age">
+	                                    <option value="18">18</option>
+	                                    <option value="20">20</option>
+	                                    <option value="25">25</option>
+	                                    <option value="30">30</option>
+	                                    <option value="35">35</option>
+	                                    <option value="40">40</option>
+	                                    <option value="45">45</option>
+	                                    <option value="50">50</option>
+	                                    <option value="55">55</option>
+	                                    <option value="60">60</option>
+	                                    <option value="65">65</option>
+	                                    <option value="70">70</option>
+	                                    <option value="75">75</option>
+	                                  </select>
+	                              </div>
+	                              <div class="select_divider">-</div>
+	                              <div class="select_age">
+	                                  <select name="max_age">
+	                                    <option value="20">20</option>
+	                                    <option value="25">25</option>
+	                                    <option value="30" selected="">30</option>
+	                                    <option value="35">35</option>
+	                                    <option value="40">40</option>
+	                                    <option value="45">45</option>
+	                                    <option value="50">50</option>
+	                                    <option value="55">55</option>
+	                                    <option value="60">60</option>
+	                                    <option value="65">65</option>
+	                                    <option value="70">70</option>
+	                                    <option value="75">75</option>
+	                                    <option value="80">80+</option>        
+	                                  </select>
+	                              </div>
+	                          </div>
+	                      </div>
+	                      <div class="form_group rgn_group">
+	                         <label class="control_label">Region</label>
+	                         <div class="form_input">
+	                          <select>
+	                          	<option>Region</option>
+	                          	<option>California</option>
+	                          	<option>Texas</option>
+	                          	<option>Florida</option>
+	                          </select>
+	                         </div>
+	                      </div>
+	                  </div>
+	              </div>
+	              <div class="form_btn">
+	                	<button type="submit" class="find_btn">
+	                		Find my tutties
+	               	 	</button>
+	              </div>
+	          </div>
+	        </form>
+	    </div>
+    </div>
+	<!-- banner form section End -->
+	<!-- profile section start -->
+	<div class="section home_profile_section">
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_1.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_2.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_3.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_4.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_5.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_6.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_7.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_8.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_9.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+		<!-- profile column start -->
+		<div class="profile_colm">
+			<div class="home_profile">
+				<div class="p_thumb">
+					<img src="images/home_profile/p_10.jpg" alt="" class="img-fluid">
+					<div class="profile_ovelay">
+						<div class="profile_dtl">
+							<h5>
+								<a href="#">
+								 <span class="p_title">JiaDivin</span>
+								 <span class="p_age">21</span>
+							  	</a>
+							</h5>
+							<div class="p_location">East of England</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- profile column end -->
+	</div>
+	<!-- why choose section start -->
+	<div class="section whychoose_section pad_top_50">
+		<div class="container">
+			<div class="heading_section">
+				<h4>WHY TUTTIflirty</h4>
+			</div>
+		</div>
+		<div class="why_wrapper">
+			<div class="why_colm">
+				<div class="why_figure">
+					<div class="why_icon">
+						<span><i class="fas fa-shield-alt"></i></span>
+					</div>
+					<div class="why_desc">
+						<h5>100%</h5>
+						<p>Verified profiles</p>
+					</div>
+					<div class="why_desc_box">
+						<div class="why_txt">
+							<h5>TUTTIflirti.com is <br/>100% Verified profiles</h5>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="why_colm">
+				<div class="why_figure">
+					<div class="why_icon">
+						<span><i class="fas fa-users"></i></span>
+					</div>
+					<div class="why_desc">
+						<h5>100%</h5>
+						<p>Matching Guaranteed</p>
+					</div>
+                    <div class="why_desc_box">
+						<div class="why_txt">
+							<h5>TUTTIflirti.com is <br/>100% Matching Guaranteed</h5>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="why_colm">
+				<div class="why_figure">
+					<div class="why_icon">
+						<span><i class="fas fa-lock"></i></span>
+					</div>
+					<div class="why_desc">
+						<h5>100%</h5>
+						<p>discrete and anonymous</p>
+					</div>
+                    <div class="why_desc_box">
+						<div class="why_txt">
+							<h5>TUTTIflirti.com is <br/>100% discrete and <br/>anonymous</h5>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- why choose section End -->
+	<!-- footer section start -->
+	<div class="section footer_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-12">
+					<div class="footer_menu">
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer_text">
+						<h5>The minimum age for participation on TUTTIflirti.com is 18 years.</h5>
+						<p>
+							TUTTIflirti.com is an adult social flirting platform for men & women who are looking for a fun, flirty or exciting contact.Every day, hundreds of new members sign up. Based on your profiles setting you will receive match suggestions. You can also use our search finctionality and browse for profiles yourself.TUTTIflirti.com is design for adult pleasure and entermentand optimised for dekstops, mobile phones and tablets. Profiles are partly fictional, physical arrengements with these angle profiles are not possible.We strongly advise you to read ourTerms and Conditions before using our Service.
+						</p>
+					</div>
+					<div class="copyright_text">
+						<p>2019- TUTTIflirti.com All Right Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer section end -->
+	<!-- jquery library js -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jquery library js -->
+	<!-- bootstrap js file-->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- bootstrap js file-->
+	<!-- owl-carousel js file-->
+	<script src="js/plugins/owl_carousel/owl.carousel.min.js"></script>
+    <!-- owl-carousel js file-->
+    <!-- gallery js file-->
+	<script src="js/plugins/gallery/jquery.magnific-popup.js"></script>
+    <!-- gallery js file-->
+    <!-- jquery ui js file-->
+	<script src="js/plugins/jquery_ui/jquery-ui.min.js"></script>
+    <!-- jquery ui js file-->
+	<!-- bootstrap selectpicker -->
+    <script src="js/plugins/selectpicker/bootstrap-select.js"></script>
+    <!-- bootstrap selectpicker -->
+	<script src="js/custom_script.js"></script>
+	</body>
+</html>

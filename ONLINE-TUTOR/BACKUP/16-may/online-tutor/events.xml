@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<monthly>
+	<event>
+		<id>1</id>
+		<name>My Event</name>
+		<startdate>2019-5-10</startdate>
+		<enddate>2019-5-10</enddate>
+		<starttime>12:00</starttime>
+		<endtime>2:00</endtime>
+		<color>#ffb128</color>
+		<url></url>
+	</event>
+	<event>
+		<id>1</id>
+		<name>My Event 2</name>
+		<startdate>2019-5-10</startdate>
+		<enddate>2019-5-10</enddate>
+		<starttime>11:00</starttime>
+		<endtime>3:00</endtime>
+		<color>#00c683</color>
+		<url></url>
+	</event>
+	<event>
+		<id>2</id>
+		<name>Another Event</name>
+		<startdate>2019-5-11</startdate>
+		<enddate>2019-5-11</enddate>
+		<starttime>12:00</starttime>
+		<endtime>2:00</endtime>
+		<color>#28cbff</color>
+		<url></url>
+	</event>
+
+
+</monthly>

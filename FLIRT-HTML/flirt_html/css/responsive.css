@@ -1,0 +1,308 @@
+
+@media(max-width: 1199px){
+	.msg_tabs ul li {
+	    padding: 13px 13px;
+	    font-size: 14px;
+	}
+	.side_profile {
+	    border-radius: 5px;
+	    margin-bottom: 15px;
+	    padding: 15px;
+	}
+	.header_carousel .owl-nav .owl-prev {
+	    left: 0px;
+	}
+	.header_carousel .owl-nav .owl-next {
+	    right: 0px;
+	}
+	.slide_left {
+	    width: 45%;
+	}
+	.slide_rights {
+	    width: 55%;
+	}
+}
+@media (min-width: 1200px){
+	
+}
+@media(min-width: 992px){
+	.profile_tabs_home .profile_tabs {
+	    text-align: center;
+	}
+	.nav_toggle{
+		display: none;
+	}
+	.pad_l_0 {
+	    padding-left: 0;
+	}
+	.head_right_menu .show_mob {
+	    display: none;
+	}
+	.head_right_menu.show_mobile{
+		display: none;
+	}
+}
+
+@media(max-width: 991px){
+	.head_right_menu.show_desktop{
+		display: none;
+	}
+	.toggle_wrap{
+		display: inline-block;
+	}
+	.left_sidebar{
+		display: none;
+	}
+	.thums_slider {
+	    margin-top: 20px;
+	}
+	.profile_colm {
+	    width: 25%;
+	}
+	.why_desc_box .why_txt h5 {
+	    font-size: 22px;
+	    line-height: 34px;
+	}
+	.side_porfile_box, .popular_box{
+		display: none;
+	}
+	/* header menus css */
+	.header_top {
+	    padding-bottom: 15px;
+	}
+	.head_logo{
+
+	}
+	.head_address {
+	    padding: 38px 0 0;
+	}
+	.head_logo {
+	    padding: 23px 0 0;
+	}
+	.head_right_menu > ul > li {
+	    padding: 15px 0px 0;
+	}
+	.head_right{
+		text-align: center;
+	}
+	.head_right .header_btns {
+	    margin: 15px 3px 0px;
+	}
+	/* header menus css */
+	.back_btn_wrap {
+	    margin: 10px 0 10px;
+	}
+}
+@media(max-width: 991px){
+}
+@media(max-width: 800px){
+	.why_desc_overlay .why_txt h5 {
+	    font-size: 18px;
+	    line-height: 25px;
+	}
+}
+@media(max-width: 900px){
+	.profile_colm {
+	    width: 33.33%;
+	}
+}
+@media(min-width: 768px){
+	.profile_info_btn{
+		display: none;
+	}
+}
+@media(max-width: 767px){
+	/*== profile slider css ==*/
+	.pofile_slides_desc{
+		display: none;
+	}
+	.profile_info_btn {
+	    margin-bottom: 11px;
+	}
+	/*== profile slider css ==*/
+	/*== footer menu css ==*/
+	.footer_menu {
+	    margin-bottom: 26px;
+	    margin-top: 40px;
+	}
+	.footer_section_inner {
+	    padding: 40px 0 40px;
+	}
+	.footer_menu > ul > li > a {
+	    font-size: 16px;
+	    font-weight: 400;
+	}
+	.copyright_text p {
+	    font-size: 17px;
+	}
+	/*== footer menu css ==*/
+}
+@media(max-width: 767px){
+	.header_top{
+		text-align: center;
+	}
+	.head_right_menu > ul {
+	    float: none;
+	    display: inline-block;
+	}
+	.profile_tabs {
+	    text-align: center;
+	}
+	.profile_grid_wrapper {
+	    padding: 20px 15px;
+	}
+	.chat_footer .chat_input{
+	   padding: 0 10px;
+	}
+	.why_colm {
+	    float: left;
+	    width: 100%;
+	}
+	.why_figure {
+	    margin-bottom: 10px;
+	}
+	.why_desc_box {
+	    padding: 30px 20px;
+	}
+	/*header logo css*/
+	.submenu.porf_submenu {
+	    right: auto;
+	    left: 0;
+	}
+	/*header logo css*/
+}
+@media(max-width: 767px){
+	/*banner css*/
+	.slide_left, .slide_rights {
+	    float: left;
+	    width: 100%;
+	}
+}
+@media(max-width: 600px){
+	/*===chat footer css===*/
+	.chat_ftr_form {
+	    text-align: center;
+	}
+	.chat_footer .chat_button {
+		padding:0; 
+	    margin: 0;
+	    position: absolute;
+	    top: 10px;
+		width: auto;
+		height: 24px;
+		line-height: 24px;
+		font-size: 19px;
+		top: 14px;
+		background: transparent;
+		color: #6581e5;
+	}
+	.chat_footer .chat_attach_btn {
+		left: 30px;
+	}
+	.chat_footer .emoji_btn {
+	    left: 5px;
+	}
+	.chat_footer .chat_send {
+	    right: 5px;
+	}
+	.chat_footer .proposal_btn {
+	    right: 32px;
+	}
+	.chat_footer .input_box {
+	    float: left;
+	    width: 100%;
+	    padding: 0px;
+	}
+	.chat_footer .chat_input {
+	    padding: 0 51px 0 50px;
+	}
+	/*===chat footer css===*/
+}
+
+@media(max-width: 480px){
+	.chat_contact_head .chat_profile .thumb {
+	    width: 70px;
+	}
+	.chat_contact_head .chat_profile .thumb img {
+	    width: 70px;
+	    height: 70px;
+	}
+	.chat_contact_head .c_detail {
+	    padding-left: 85px;
+	    padding-top: 0;
+	}
+	.chat_contact_head .c_title h6{
+		font-size: 20px;
+	}
+	.chat_profile .profile_status p{
+		font-size: 14px;
+	}
+	.header_section{
+		text-align: center;
+	}
+	.logo_left {
+	    float: none;
+	    display: inline-block;
+	}
+	.header_right {
+	    float: left;
+	    width: 100%;
+	    margin-top: 10px;
+	}
+	.header_right > ul > li > a {
+	    font-size: 14px;
+	    padding: 10px 22px;
+	}
+}
+@media(max-width: 480px){
+	/* chat css */
+	.chat_usr_thumb {
+	    width: 60px;
+	}
+	.chat_usr_thumb img {
+	    width: 60px;
+	    height: 60px;
+	}
+	.chat_usr_left .chat_usr_msg_wrap {
+	    padding-left: 70px;
+	}
+	.chat_usr_right .chat_usr_msg_wrap {
+	    padding-right: 70px;
+	    text-align: right;
+	}
+	/* chat css */
+}
+@media(max-width: 480px){
+	.chat_msgs p {
+	    font-size: 13px;
+	    line-height: 20px;
+	}
+	.chat_date_time span{
+		font-size: 13px;
+	}
+	
+}
+@media(max-width: 400px){
+	
+}
+@media(max-width: 375px){
+	.c_detail .c_title h6 {
+	    overflow: hidden;
+	    max-width: 125px;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	}
+	.profile_rows .sub_heading {
+	    font-size: 15px;
+	    font-weight: 500;
+	}
+}
+@media(max-width: 360px){
+	.profile_grid {
+		width: 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+}

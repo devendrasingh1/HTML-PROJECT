@@ -1,0 +1,307 @@
+* { margin:0;padding:0;border:0;outline:0}
+
+html {height: 100%;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+font, small, strong, dl, dt, dd, ol, ul, li,
+form, label, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit; 
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;}
+
+.clearfix{ display:inline-block;}
+ 
+html[xmlns] .clearfix{ display:block;}
+
+img{
+  max-width:100%; 
+  height:auto;
+  border:none;}
+
+a{ 
+  transition:color 0.2s ease-in; 
+  -moz-transition:color 0.2s ease-in; 
+  -webkit-transition:color 0.2s ease-in;
+  text-decoration:none;}
+    
+a:hover{ 
+  text-decoration:none;}
+  
+input[type="text"], textarea, select, button, input[type="submit"], input[type="button"]
+{ -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;}
+
+ul{
+  margin:0px; 
+  padding:0px;}
+  
+ul li{ list-style:none;}
+
+body{ 
+  width:100%; 
+  height:100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size:13px;
+  background-color:#FFFFFF}
+ 
+input[type="text"], textarea, select, button, input[type="submit"], input[type="button"]
+{ -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  }
+  
+/************reset css******************/
+
+header,footer{ display:block;}
+
+ h1{ 
+  font-size: 54px;
+  line-height: 55px;
+  color: #FFFFFF;
+  }
+  
+ h2{ 
+  font-size:37px;
+  color:#FFFFFF; 
+}
+ 
+.banner-content h1 {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-shadow: 0 0 100px #000;
+}
+  
+.banner-content h2{ 
+  font-size:37px;
+  color:#FFFFFF; 
+  font-weight:400; 
+  text-transform:uppercase;
+  line-height:46px; 
+  margin-top:20px; 
+} 
+h3{ 
+  color:#000000; 
+  font-size:18px; 
+  font-weight:700}  
+  
+h4{ 
+  font-size:13px;
+   color:#7d7c7c;
+   font-weight:700;}
+
+p{ 
+  font-size:14x; 
+  color:#878686; 
+  font-weight:600;}
+
+#page{ width:100%;}
+
+.row{ 
+  max-width:1000px; 
+  margin:0px auto; 
+  padding:0 20px;}
+  
+header {
+    background-color: rgb(255, 188, 5);
+    padding: 10px 0;
+}
+.logo{ 
+  float:left; 
+  color:#FFFFFF; 
+  font-size:22px; 
+  font-weight:700; 
+  text-transform:uppercase;
+  padding-top:5px;}
+  
+.logo a{ color:#fff;}
+  
+.head-right{
+  float:right;}
+  
+.signup-button {
+    background-color: #e54147;
+    border-radius: 2em;
+    padding: 0px 35px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+}
+  
+.signup-button:hover, .signup-button:focus{ 
+  color:#ffffff;
+  text-decoration: none;
+  outline: none;
+}
+  
+.head-right img{ 
+  vertical-align:top; 
+  margin-right:20px;}
+  
+#banner{
+  background: rgb(255, 188, 5) url(../land_assets/images/bg-img.jpg) no-repeat center top;
+  background-size: cover;
+}
+  
+.banner-content{ width:50%; padding-top:80px;}
+
+.form-arrow{ text-align:right}
+
+.signupform form{ width:100%;}
+
+.signupform input[type="text"]{ 
+  width:70%; 
+  display:block; 
+  float:left;
+  background-color: rgba(224, 164, 2, 1); 
+  padding:20px 28px; 
+  color:#FFFFFF; 
+  font-size:30px; 
+  color:#FFFFFF;
+}
+.signupform input[type="button"] {
+    width: 30%;
+    display: block;
+    float: left;
+    padding: 20px 28px;
+    background-color: #e54147;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+  
+.signupform input[type="button"]:hover{ background-color:#000000}
+  
+.common{ margin-left:-3%;}
+
+.wrapper{ 
+   padding:30px 0;
+   background:#fff;}
+
+.one-third{
+  float:left; 
+  margin-left:3%;
+  width:30.3%; 
+  padding:20px 0; }
+  
+.icon{ 
+  float:left; 
+  width:21%;  
+  margin-right:9%;
+  margin-top:5%;}
+  
+.one-third img{ vertical-align:middle; }
+  
+.content{ 
+  float:left; 
+  width:70%;}
+  
+.content h3 a{ color:#000;}
+
+.content h3 a:hover{ color:#8f299e;}
+  
+.content p{ padding-top:15px;}
+  
+.pre-footer{ 
+  background-color:#e0e0e0; 
+  padding:35px 0;}
+  
+.pre-footer h4{ 
+  padding-bottom:15px; 
+  text-align:center;}
+
+.pre-footer p{ 
+  font-size:13px; 
+  color:#888888;
+  text-align:center;}
+  
+.footer{ 
+  text-align:center; 
+  font-size:13px; 
+  font-weight:700; 
+  color:#878686; 
+  padding:25px 0;
+  background:#fff;}
+  
+@media screen and (min-width:740px) and (max-width:920px)
+{
+   h1{ font-size:56px; line-height:60px;}
+   h2{ font-size:35px; line-height:42px;} 
+   .signupform input[type="button"]{ font-size:22px; padding:22px 25px;}
+   .signupform input[type="text"]{ font-size:26px;}
+   .signupform input[type="text"]{ padding:20px;}
+   .banner-content{ width:55%;}
+   .icon{ width:20%;}
+}  
+  
+  
+@media only screen and  (max-width:740px)
+{
+   .one-third{ float:none; width:auto;}
+   .icon{ margin-top:0; width:auto; margin-right:3%;}
+   .logo, .head-right{ float:none; width:auto; text-align:center;}
+   .head-right{ margin-top:25px;}
+   .banner-content{ width:auto;}
+   .banner-content h1 {
+      font-size: 45px;
+      line-height: 53px;
+    }
+    .banner-content h2 {
+      font-size: 26px;
+      line-height: 37px;
+    }
+
+   .form-arrow{ display:none;}
+   .signupform form{ padding:25px 0;}
+   .signupform input[type="text"]{ width:100%; float:none;}
+   .signupform input[type="button"]{ float:none; width:auto; margin-top:15px; font-size:24px;}
+}
+
+@media only screen and (max-width:480px)
+{   
+  .banner-content h1{ font-size:40px; line-height:45px;}
+	.banner-content{ padding-top:65px;}
+	.banner-content h2{ font-size:32px; line-height:35px;}
+	.signupform input[type="button"]{ font-size:20px; padding:15px 25px;}
+	.signupform input[type="text"]{ padding:15px 20px; font-size:25px;}
+	.head-right img{ display:none;}
+	div#modal-container-178636 .modal-content {background: #fff;}
+}
+
+div#modal-container-178636 .modal-content {
+    /* background: rgb(255, 188, 5) url(../images/bg-img.jpg) no-repeat center top; */
+    /* background-size: cover; */
+    background-color: transparent;
+}
+#modal-container-178636 .modal-body{
+  padding: 0;
+}

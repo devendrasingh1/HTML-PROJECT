@@ -1,0 +1,464 @@
+/*== check box css ==*/
+.check_box input[type="checkbox"]{
+    /*display: none;*/
+    position: absolute;
+    opacity: 0;
+}
+.check_box label {
+    display: inline-block;
+    position:relative;
+    cursor:pointer;
+}
+.check_box .c_box {
+    float: left;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #666666;
+    position: relative;
+    transition: all ease-in 0.25s;
+    -webkit-transition: all ease-in 0.25s;
+    -moz-transition: all ease-in 0.25s;
+    margin-top: 3px;
+}
+.check_box .c_box:after {
+    position: absolute;
+    content: "";
+    left: 2px;
+    top: 3px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #e54147;
+    border-bottom: 2px solid #e54147;
+    visibility:hidden;
+    opacity:0;
+    transition:all ease-in 0.25s;
+    -webkit-transition:all ease-in 0.25s;
+    -moz-transition:all ease-in 0.25s;
+}
+.check_box .c_text {
+    display: block;
+    vertical-align: middle;
+    color: #111111;
+    font-size: 14px;
+    margin-left: 25px;
+}
+.check_box input[type="checkbox"]:checked ~ .c_box{
+    border-color: #e54147;
+}
+.check_box input[type="checkbox"]:checked ~ .c_box:after{
+    visibility:visible;
+    opacity:1;
+    transform: rotate(-31deg);
+    -webkit-transform: rotate(-31deg);
+    -moz-transform: rotate(-31deg);
+    -ms-transform: rotate(-31deg);
+    -o-transform: rotate(-31deg);
+}
+/*== check box css ==*/
+.banner-form input[type="text"], .banner-form input, .banner-form select {
+    background: transparent;
+    font-size: 14px;
+    padding: 0 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    color: #111;
+}
+.banner_form_inner {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.80);
+    width: 100%;
+}
+.terms_group .c_text a {
+    color: #e54147;
+}
+.action.medium:hover {
+background: #e54147;
+}
+.form-inner .form-control, 
+.selectpicker {color: #fff;background: url(../images/select-icon.png) 95% center no-repeat #fff;}
+.banner-form .selectpicker {
+padding: 8px 10px;
+color: #000;
+border:1px solid #eee;
+}
+.form-control { color:#000;
+border: 1px solid #eee;}
+body {
+padding: 0!important;
+}
+.date_bg {
+    padding: 10px;
+}
+.date_bg h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #e54147;
+    line-height: 34px;
+    font-weight: 400;
+}
+.search_list_outer .col-md-3, .faq-feature .col-md-3 {
+    padding: 0px 15px;
+}
+#search_profile_option form {
+    padding: 15px 0px;
+}
+.close_dropdwn {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    font-size: 21px;
+    cursor: pointer;
+    line-height: normal;
+    color: #EC155A;
+}
+#search_profile_option .col-md-12 {
+margin: 10px 0px;
+}
+.SettingsListLink span.setting_action {
+width: auto;
+text-align: right;
+display: block;
+float: none;
+}
+span.setting_field {
+text-align: center;
+display: block;
+}
+.SettingsListLink span {
+width: auto;
+color: #666;
+font-weight: 500;
+float: none;
+}
+.ask_question h4 {
+margin-top: 15px;
+padding: 0px;
+}
+.profile-user-information {
+float: none;
+}
+.row.send-box-panel, .row.gallery-box-panel, .row.user_about_info, .profile-user-information, .row.send-box-panel {
+float: none;
+width: auto;
+}
+.send-box-panel .col-md-6, .gallery-box-panel .col-md-4, .user_about_info .col-md-4 {
+padding: 0 15px;
+}
+#search-page h5 {
+font-size: 17px;
+margin: 0 0 30px 0px;
+}
+.mood_radio label {
+    display: block;
+}
+input:focus {
+border: none;
+}
+.bootstrap-select .btn:focus {
+outline: none !important;
+}
+.btn:focus {
+outline: none;
+}
+.banner-form .selectpicker:focus {
+outline: none !important;
+}
+.radio-btn {
+margin: 0 2px;
+display: inline-block;
+}
+.form-inner input[type="radio"] {
+opacity: 0;
+position: absolute;
+}
+.radio-btn input[type="radio"] + label:hover, .radio-btn input[type="radio"]:checked + label {
+background: #a74162;
+border-radius: 50%;
+}
+.banner-form .btn-bg.btn-primary {
+background: #e54147;
+border-radius: 5px;
+margin: 0 0 30px 10%;
+}
+.banner-form h4 {
+    background: #EC155A;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    line-height: 22px;
+    font-weight: 500,
+}
+.form-inner {
+    float: left;
+    width: 100%;
+    padding: 20px 20px 0;
+    color: #000
+}
+.form-inner .form-group {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px
+}
+.banner-form .form-inner .form_group {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+}
+.form-inner .form-control, .selectpicker {
+    padding: 10px 15px;
+    width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+.select-left {
+    width: 40%;
+    float: left;
+}
+.select-divider {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 30px;
+}
+.form-inner .form-control {
+    background-image: none;
+    font-size: 13px;
+    height: 40px;
+}
+.form-inner .form-control::-webkit-input-placeholder {
+    color:#000;
+}
+.form-inner .form-control::-moz-placeholder {
+    color:#000;
+}
+.form-inner button span, .page-section-subscribe a span {
+    width: 100%;
+    display: block;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    ms-transform: translate(0, 0);
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    ms-backface-visibility: hidden;
+    transition: all ease-in .3s;
+    -moz-transition: all ease-in .3s;
+    -ms-transition: all ease-in .3s;
+}
+.banner-form button i.heart1, .page-section-subscribe a i.heart1 {
+font-size: 22px;
+right: 47px
+}
+.banner-form button i.heart2, .page-section-subscribe a i.heart2 {
+font-size: 18px;
+margin: 0 4px;
+right: 18px
+}
+.banner-form button:hover, .page-section-subscribe a:hover {
+background: #E12C53
+}
+.banner-form button i.heart3, .page-section-subscribe a i.heart3 {
+font-size: 16px
+}
+.form-inner button span i, .page-section-subscribe a i {
+position: absolute;
+display: block;
+top: 50%;
+right: 0;
+-webkit-transform: translate(40px, -50%);
+-ms-transform: translate(40px, -50%);
+transform: translate(40px, -50%);
+ms-transform: translate(40px, -50%);
+opacity: 0
+}
+.back-search-link a, .send-box a, .status {
+display: inline-block
+}
+.form-inner button:hover span, .page-section-subscribe a:hover span {
+-webkit-transform: translate(-20px, 0);
+-ms-transform: translate(-20px, 0);
+transform: translate(-20px, 0);
+ms-transform: translate(-20px, 0)
+}
+.form-inner button:hover span i, .page-section-subscribe a:hover i {
+opacity: 1
+}
+.btn-primary {
+    display: inline-block;
+    color: #fff;
+    text-transform: capitalize;
+    /*font-size: 18px;*/
+    font-size: 14px;
+    padding: 10px 30px;
+    border: none;
+    width: 80%;
+    margin: 15px 0 0;
+}
+.use-btn {
+	display: inline-block;
+	margin: 0 10px 10px 0;
+	padding: 22px 52px;
+	border-radius: 3px;
+	background-color: #fff;
+	color: #4b98a9;
+	font-size: 18px;
+}
+
+.use-btn:hover,.use-btn:focus {
+	background-color: #43f3c7;
+	color: #fff;
+	text-decoration: none;
+}
+span#text12 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+/*/ form styling*/
+
+.selectpicker {
+    padding: 10px 15px;
+    width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+.select-left {
+    width: 40%;
+    float: left;
+}
+.form-inner .control-label {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 15px;
+}
+.select-divider {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 30px;
+}
+.home_hometown {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #eee;
+    color: #000;
+}
+input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+.radio-btn input[type="radio"] + label:hover, .radio-btn input[type="radio"]:checked + label {
+    background: #e54147;
+    border-radius: 50%;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+ .selectpicker {
+    padding: 8px 10px;
+    color: #000;
+    border: 1px solid #eee;
+}
+.steps_form .control-label {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.lander_8_form .modal-dialog {
+    max-width: 550px;
+    width: auto;
+    margin: 90px auto 0;
+}
+.lander_8_form .form-inner {
+    padding: 0px 0px 0;
+}
+.radio_dv {
+    text-align: center;
+}
+.radio_dv .radio_group {
+    display: inline-block;
+    padding: 0 4px;
+}
+.validation {
+    color: #e54147;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 6px;
+}
+/*calander css start*/
+.calander_widget .ui-datepicker {
+    width: 100%;
+}
+.ui-datepicker .ui-datepicker-header {
+    background: #e54147;
+    border: none;
+}
+.ui-datepicker .ui-state-default {
+    text-align: center;
+    color: #000;
+}
+.ui-datepicker .ui-state-hover, .ui-datepicker .ui-state-highlight {
+    background: #e54147;
+    color: #fff;
+    border-color: #e54147;
+}
+.ui-datepicker .ui-state-default.ui-state-active{
+    background: #000000;
+    color: #fff;
+    border-color: #000000;
+}
+.ui-datepicker .ui-datepicker-title {
+    color: #fff;
+}
+.ui-datepicker select.ui-datepicker-year {
+    border: none;
+    padding: 2px 2px;
+    color: #000;
+}
+/*calander css End*/
+
+header .signup_popup_btn{
+    display: block;
+}
+@media(max-width: 767px){
+    .banner-form .radio_dv .col-xs-5, 
+    .banner-form .radio_dv .col-xs-7 {
+        padding: 0 5px;
+    }
+	.banner_form_8 .banner_form_inner .form_group > .control-label {
+		display: none;
+	}
+	.banner_form_8 .date_bg h2 {
+		font-size: 21px;
+		line-height: 30px;
+		margin-top: 12px;
+	}
+}
+@media(max-width: 480px){
+    .banner-form .radio_dv .col-xs-5, 
+    .banner-form .radio_dv .col-xs-7  {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,879 @@
+@charset "utf-8";
+/* CSS Document */	
+@import'bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+
+/*-------------------------------------------------------------------------------------------RESET CSS START	s*/
+body {background-color: #e1e2f1; font-family: 'Poppins', sans-serif; direction: ltr; font-size:16px; color:#757575; line-height:26px; padding:0px; margin:0px; -webkit-font-smoothing: antialiased; }
+html, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0px; padding:0px; }
+footer, header, figure, aside { padding:0px; display:block; }
+q:before, q:after { content:''; }
+abbr, acronym { border:0; font-variant:normal; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+input, select, textarea, button { font-family: 'Open Sans', sans-serif; direction: ltr; color:#3e3e3e; font-size:12px; margin:0em; margin:0px; border:1px solid #cecece; -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; transition: all 0.4s ease-out; border-radius:0px; box-sizing:border-box; }
+input, button { overflow:visible; }
+input, textarea{ outline:none; }
+input[type=file] + input[type=file] { margin-left:5px; }
+input[type=text], input[type=password], textarea { padding:5px 15px; font-size:20px; line-height:12px; }
+select + select, input[type=text] + input[type=text], input[type=password] + input[type=password] input[type=text] + select { margin-left:0px; }
+input[type=text] + input[type=submit] { margin-left:10px; }
+input[type=checkbox] { height:13px; width:13px; margin-right:5px; position:relative; top:1px; }
+input[type=submit], input[type=button], input[type=reset], a, button { cursor:pointer; }
+input[type=submit], input[type=button], input[type=reset], button { overflow:visible; }
+input[type=submit] + input[type=submit], input[type=button] + input[type=button], input[type=reset] + input[type=reset], button + button, .btn + .btn, input[type=submit] + input[type=button], input[type=button] + input[type=submit] { margin-left:5px; }
+input[type=radio] { margin-right:4px; position:relative; top:1px; }
+input[type=radio] + abbr, input[type=checkbox] + abbr { padding-right:0px; }
+input[type=file] { padding:4px 5px; display:inline; }
+input[type=file] + input { margin-left:5px; }
+input, input:focus, input:active, .btn:focus, .btn:active:focus, .btn.active:focus { outline:none; }
+abbr + select, abbr + input { margin-left:15px; }
+select[class*=col-] { padding:7px 8px; }
+select option { padding-left:4px; }
+input[type=submit], input[type=button], input[type=reset], button, .btn { font-weight:bold; padding:12px 48px; letter-spacing:1px; text-decoration:none; display:inline-block; text-transform:uppercase; background-color:#4b70fa; border-radius:5px; color:#FFF; }
+input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, button:hover, .btn:hover, .btn.focus, .btn:focus, .btn:hover { background-color:#2e2e2e; color:#FFF; border-color:#2e2e2e; }
+p { margin:0px; padding-bottom:15px; }
+a { color:#000; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
+a:hover{ text-decoration:underline; }
+a:visited { text-decoration:none; }
+a, a:hover, a:focus, a:active, a:visited { outline:none; }
+a img, a:hover img, img, a input { text-decoration:none; }
+a img, img, input[type=checkbox], input[type=radio], iframe { border:none; }
+ul { margin:0px; padding:0px; }
+del { visibility:hidden; }
+textarea { width:100%; max-width:380px; height:160px; resize:none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+article{ padding:0px 0px; min-height:600px;}
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse; border-spacing:0; }
+td { vertical-align:top; }
+select { max-width:100%; }
+img { max-width:100%; border:0; -ms-interpolation-mode:bicubic; vertical-align:middle; }
+hr { color:#D0D0D0; }
+address p { padding-bottom:5px; }
+*:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+::-webkit-scrollbar { width:8px; }
+::-webkit-scrollbar-button { width:8px; height:5px; }
+::-webkit-scrollbar-track { background-color:#DDD; border: skinny plain lightgray; box-shadow: 0px 0px 3px #dfdfdf inset; }
+::-webkit-scrollbar-thumb { background-color:#999; border: skinny plain gray; }
+::-webkit-scrollbar-thumb:hover { background:#1b1e24; }
+::-webkit-input-placeholder { font-family: 'Open Sans', sans-serif; font-size:14px; direction: ltr; color:#757575; }
+::placeholder { font-family: 'Open Sans', sans-serif; font-size:14px; direction: ltr; color:#757575; }
+::selection { background-color:#9e9e9e; color:#757575; }
+h1 { font-size:32px; font-weight:700; margin:0px; }
+h2 { font-size:33px; margin:0px; color:#212121; padding-bottom:30px; }
+h2 span{ display:block; font-size:16px; color:#757575; padding-top:10px; }
+h3 { font-size:25px; font-weight:400; margin:0px; padding-bottom:15px; }
+h4 { font-size:18px; line-height:30px; }
+h5 { font-size:16px; margin:0px; color:#212121; padding-bottom:20px; }
+/*-------------------------------------------------------------------------HEADER CSS CLOSE	*/	
+header{}
+/*-------------------------------------------------------------------------HEADER CSS CLOSE	*/	
+/*-------------------------------------------------------------------------FOOTER CSS CLOSE	*/	
+footer{}
+/*-------------------------------------------------------------------------FOOTER CSS CLOSE	*/	
+
+/*-------------------------------------------------------------------------------------------RESET CSS CLOSE	*/	
+/*-------------------------------------------------------------------------------------------COMMON CSS START	*/	
+.carousel-item { height: 32rem; background-color: #777; }
+.loader { position:fixed; left:45%; top:40%; z-index:9999; border:10px solid #f3f3f3; border-radius:50%; border-top:10px solid #ecb752; width:80px; height:80px; -webkit-animation: spin 2s linear infinite; /* Safari */ animation: spin 2s linear infinite; }
+/* Safari */
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+	}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+	}
+
+#scroll {	position:fixed; right:10px; bottom:10px; cursor:pointer; width:50px; height:50px; background-color:#3498db; text-indent:-9999px; border-radius:60px }
+#scroll span { position:absolute; top:50%; left:50%; margin-left:-8px; margin-top:-12px; height:0; width:0; border:8px solid transparent; border-bottom-color:#FFF;	}
+#scroll:hover { background-color:#e74c3c; opacity:1;filter:"alpha(opacity=100)"; -ms-filter:"alpha(opacity=100)"; }
+.navbar, .fixed-me{ transition: all 1s ; }
+html body .fixed-me{ background-color:#fff; position:fixed; top:0px; z-index:1; width:100%; }
+
+/*-------------------------------------------------------------------------------------------COMMON CSS CLOSE	*/	
+
+/*===============================================================HEADER CSS START  */
+
+.my-header{border-bottom: 1px solid #ccc; background-color: #fff; padding: 15px 0px;}
+#logo a img {
+    width: 140px;
+}
+#logo {
+    width: 30%;
+    float: left;
+}
+.search-bar input {
+    font-size: 14px;
+    border-radius: 24px;
+    width: 335px;
+    padding: 8px 19px;
+    background-color: #e1e2f1;
+    border-color: #e1e2f1;
+    color: #000;
+    position: relative;
+}
+.search-bar button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: #000;
+    font-size: 17px;
+    position: absolute;
+    top: 4px;
+    right: 12%;
+}
+/*.side-bar:before {
+    position: absolute;
+    content: '';
+    background: red;
+    width: 123px;
+    height: 123px;
+    left: -119px;
+    top: 0;
+}*/
+.search-bar button:hover {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: #000;
+    font-size: 18px;
+}
+.search-bar input::-webkit-input-placeholder { /* Edge */
+  color: #222;
+  font-size: 14px;
+}
+
+.search-bar input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #222;
+  font-size: 14px;
+}
+
+.search-bar input::placeholder {
+  color: #222;
+  font-size: 14px;
+}
+.navbar-expand-lg .navbar-collapse{float: right;}
+.my-menu li .dropdown-menu a {
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+.my-menu li a i {
+    font-size: 19px;
+    padding-top: 9px;
+    position: relative;
+}
+.my-menu li .dropdown-menu a i {
+    padding-right: 12px;
+    font-size: 18px;
+}
+li.nav-item.dropdown a img {
+    border-radius: 50%;
+    width: 39px;
+    vertical-align: middle;
+    margin-right: 13px;
+}
+.my-menu li + li {
+    margin-left: 12px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #000;
+}
+.navbar-light .navbar-nav .nav-link{color: #000;}
+.my-menu li a i:after {
+    position: absolute;
+    content: '1';
+    color: #fff;
+    border: 1px solid #70c70f;
+    background-color: #70c70f;
+    font-size: 8px;
+    padding: 2px 5px;
+    left: 13px;
+    border-radius: 50%;
+    top: 7px;
+}
+.my-menu li .dropdown-menu a i:after{display: none;}
+
+/*===============================================================HEADER CSS END */
+
+/*===============================================================SIDE BAR CSS START */ 
+
+.side-bar {
+    min-height: 100%;
+    background-color: #136e7b;
+    padding-top: 25px;
+   background-color: #136e7b;
+}
+.my-menu a.nav-link.active {
+    background-color: #e1e2f1;
+    color: #191919;
+}
+.my-menu a.nav-link:hover {
+    background-color: #e1e2f1;
+    color: #191919;
+}
+.my-menu a.nav-link{color: #e1e2f1;border-bottom: 1px solid #e1e2f1;}
+.my-menu {
+    padding-top: 24px;
+}
+/*===============================================================SIDE BAR CSS CLOSE */ 
+
+
+
+/*===============================================================DRIVER DETAILS CSS STSRT */ 
+
+
+.details input::-webkit-input-placeholder { /* Edge */
+  color: #303030;
+  font-weight: 500;
+}
+
+.details input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #303030;
+ font-weight: 500;
+}
+
+.details input::placeholder {
+  color: #303030;
+  font-weight: 500;
+}
+
+.preference.btn {
+    background-color: transparent;
+    color: #000;
+}
+.details input:focus {
+    box-shadow: none;
+    border-color: #e1e2f1;
+    background-color: #e1e2f1;
+}
+.details select:focus {
+    box-shadow: none;
+    border-color: #e1e2f1;
+    background-color: #e1e2f1;
+}
+.details select {
+    color: #303030;
+    background-color: #e1e2f1;
+    font-weight: 500;
+    border: 0;
+    padding: 7px 15px;
+    border-radius: 24px;
+    position: relative;
+}
+.preference.btn {
+    color: #fff;
+    position: absolute;
+    background-color: #30aabc;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    right: 0;
+    top: -38px;
+    border: 0;
+    padding: 7px 15px;
+}
+.preference.btn:focus {
+    box-shadow: none;
+}
+.custom-details {
+    padding: 20px 33px 51px 32px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+.custom-details h2 {
+    font-size: 19px;
+    color: #303030;
+    text-transform: uppercase;
+}
+.profile-pic{text-align: center; padding-bottom: 40px;}
+.profile-pic img {
+    border-radius: 50%;
+    width: 120px;
+    border: 2px solid #136e7b;
+    padding: 3px;
+
+}
+form a.upload {
+    background-color: #30aabc;
+    padding: 10px 40px;
+    border-radius: 24px;
+    color: #fff;
+    margin-left: 38%;
+    margin-top: 14px;
+    display: inline-block;
+    text-decoration: none;
+}
+/*.info ul li {
+    list-style: none;
+    font-size: 18px;
+    color: #303030;
+    display: flex;
+}
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.info ul li span {
+    display: block;
+}*/
+/*.info ul li span.right {
+    float: right;
+    display: inline-block;
+}*/
+/*.info ul li span {
+    display: block;
+    color: #303030;
+    padding-top: 5px;
+}*/
+/*.info ul li span {
+    text-align: left;
+    display: block;
+}*/
+/*.info ul li + li {
+    margin-top: 18px;
+}*/
+.driver-info img {
+    border-radius: 0;
+}
+.info table tbody tr td {
+    color: #131313;
+}
+.info {
+    border: 1px solid #e1e2f1;
+}
+.info .table {
+    margin-bottom: 0px;
+}
+.profile-pic p{color: #000;}
+.profile-pic form {
+    text-align: left;
+}
+.driver-info {
+    text-align: left !important;
+    padding-bottom: 20px;
+}
+
+/*===============================================================DRIVER DETAILS CSS CLOSE */
+
+
+/*===============================================================CUSTOMER DETAILS CSS START */ 
+.details {
+    max-width: 570px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+.details label {
+    color: #303030;
+}
+.details input {
+    border-radius: 24px;
+    background-color: #e1e2f1;
+    border-color: #e1e2f1;
+    position: relative;
+}
+.details span {
+    position: absolute;
+    right: 16px;
+    top: 0px;
+    background-color: #30aabc;
+    padding: 6px 15px;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+}
+a.tab_icon.active:before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #136e7b;
+    border-radius: 50%;
+    bottom: -6px;
+    left: 42%;
+}
+.details span i{color: #fff;}
+
+/*===============================================================CUSTOMER DETAILS CSS CLOSE */ 
+
+/*===============================================================CUSTOMER REVIEW CSS START */ 
+
+.custom-review {
+    padding: 20px 32px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+.custom-review h2 {font-size: 24px;padding-bottom: 0;}
+.frow{
+width:100%;
+padding-bottom:7px;
+display:inline-block;
+}
+.frow> div:first-child{ float:left;width:110px;}
+
+.frow> div + div{ margin-left:109px; }
+
+.frow> div:first-child img {width: 80px;border-radius: 100%;}
+
+ul.review li {list-style: none;display: inline-block;}
+
+.frow> div + div h2 {font-size: 18px;padding-bottom: 7px;}
+
+.frow> div + div h2 span {padding-top: 5px;font-size: 14px;}
+
+ul.review li + li {margin-left: 5px;}
+
+ul.review li i {font-size: 20px;color: #ef731b;}
+
+.review-list p {
+    font-size: 12px;
+    color: #000;
+    line-height: 15px;
+    padding: 12px;
+    max-width: 593px;
+    background: #e1e2f1;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+.review-list {
+    padding: 35px 0px;
+    border-bottom: 1px solid #e1e2f1;
+}
+li.c-h i {
+    color: #e1e2f1 !important;
+}
+/*===============================================================CUSTOMER REVIEW CSS CLOSE */ 
+
+
+/*===============================================================REVIEW RATE CSS START */ 
+
+h2.heading {
+    text-transform: inherit;
+    font-size: 26px;
+    padding-bottom: 0;
+    padding-top: 50px;
+    color: #000;
+}
+h2.heading span {
+    font-size: 18px;
+    font-weight: normal;
+    color: #303030;
+}
+ul.rate li {
+    list-style: none;
+    font-size: 18px;
+    color: #000;
+}
+ul.rate li span {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+}
+ul.rate li + li {
+    margin-top: 17px;
+}
+.frow1{
+width:100%;
+padding-bottom:7px;
+display:inline-block;
+}
+.frow1> div:first-child{ 
+float:left;
+width:50px;
+}
+.frow1> div + div{ margin-left: 50px; }
+ul.rate {
+    border-bottom: 1px solid #e1e2f1;
+    padding-bottom: 25px;
+}
+.rating {
+    padding-top: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.left-side h3, .right-side h3 {
+    font-size: 20px;
+    color: #000;
+}
+.left-side {
+    width: 50%;
+    float: left;
+}
+.left-side h3 span {
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    color: #666666;
+}
+.right-side {
+    float: right;
+}
+.rating-star p {
+    font-size: 15px;
+    color: #000;
+    padding-top: 36px;
+    
+}
+.rating-star {
+    width: 100%;
+    float: left;
+    text-align: center;
+   
+}
+.rating-star ul li + li{margin-left: 8px;}
+.rating-star ul li {
+    list-style: none;
+    display: inline-block;
+} 
+.rating-star ul li i{font-size: 32px;  color: #30aabc;}  
+.comment-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.comment-box textarea {
+    border: 0;
+    margin-top: 25px;
+    max-width: 500px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+textarea#comment:focus {
+    box-shadow: none;
+    border-color: #ccc;
+}
+/*===============================================================REVIEW RATE CSS CLOSE */ 
+
+/*===============================================================CUSTOMER CHATTING  CSS START */ 
+
+.chat_list_part {
+    padding: 40px 0px;
+}
+.chat_search {
+    margin-left: 33px;
+}
+.chat_search label {
+    padding-bottom: 18px;
+    font-size: 24px;
+    color: #e1e2f1;
+}
+.search_input_group {
+    position: relative;
+}
+.search_input_group input {
+    border-radius: 24px;
+    padding: 7px 20px;
+    background-color: #e1e2f1;
+    border-color: #e1e2f1;
+    font-size: 14px;
+    width: 290px;
+}
+.search_input_group button {
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: #212121;
+    right: 43px;
+    top: 4px;
+}
+.chatting {
+    width: 100%;
+    padding-bottom: 7px;
+    display: inline-block;
+        margin-left: 30px;
+}
+.chatting-img {
+    float: left;
+    width: 76px;
+}
+.chatting-img img {
+    width: 55px;
+    border-radius: 100%;
+}
+.chatting-content{margin-left: 72px;}
+.chatting-content h2 {
+    font-size: 17px;
+    color: #e1e2f1;
+    font-weight: 300;
+    padding-bottom: 0px;
+}
+a.nav-link:active .chatting-content h2 {
+    color: #131313;
+}
+a.nav-link:active .chatting-content h2 span {
+    color: #131313;
+}
+a.nav-link:active .chatting-content p {
+    color: #131313;
+}
+.my-menu a.nav-link.active .chatting-content h2 {
+    color: #131313;
+}
+.my-menu a.nav-link.active .chatting-content h2 span{
+    color: #131313;
+}
+.my-menu a.nav-link.active .chatting-content p {
+    color: #131313;
+}
+.my-menu a.nav-link:hover .chatting-content h2 {
+    color: #131313;
+}
+.my-menu a.nav-link:hover .chatting-content h2 span {
+    color: #131313;
+}
+.my-menu a.nav-link:hover .chatting-content p {
+    color: #131313;
+}
+.chatting-content h2 span {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 14px;
+    color: #e1e2f1;
+    font-weight: lighter;
+}
+.chat-user ul li {list-style: none;}
+.chat-user {
+    padding-top: 25px;
+}
+.chatting-content p {
+    color: #e1e2f1;
+    padding-bottom: 0px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.chatting_body ul li {
+    list-style: none;
+    float: left;
+    width: 100%;
+   
+}
+.main-chat {
+    display: inline-block;
+    width: 100%;
+}
+.chat-user-thumb {
+    width: 70px;
+    display: inline-block;
+    float: left;
+}
+.chat-user-thumb img {
+    border-radius: 50%;
+}
+.chat-user-box {
+    width: 100%;
+    float: left;
+    padding-top: 16px;
+}
+.chat-msg {
+    display: inline-block;
+}
+.chat-type {
+    min-width: 100px;
+    padding: 7px 18px;
+    background-color: #31c5c5;
+    color: #fff;
+    border-radius: 2em 2em 2em 2em;
+    box-shadow: 1px 3px 4px -1px #ccc;
+}
+.chat-type p {
+    padding-bottom: 0;
+}
+.chat-date-time{margin-top: 7px;}
+.chat-date-time p {
+    color: #131313;
+}
+.chat-date-time p span {
+    display: inline-block;
+    padding-left: 10px;
+    color: #696969;
+}
+.right-chat .chat-user-thumb {
+    float: right;
+}
+.right-chat .chat-user-box {
+    text-align: right;
+}
+
+.right-chat .chat-type {
+    background-color: #e0e0e0;
+    color: #131313;
+}
+.right-chat .chat-date-time p{color: #696969;}
+.right-chat .chat-date-time p span{color: #131313;}
+/*===============================================================CUSTOMER CHATTING CSS CLOSE */ 
+
+
+
+
+
+/*====================================================================DELIVERY SEC START*/
+
+#map-layer {
+      position: relative;
+    margin: 0px 0px;
+    max-width: 667px;
+    min-height: 400px;
+    overflow: hidden;
+}
+.lbl-way-points {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.way-points-option {
+    display:inline-block;
+    margin-right: 15px;
+}
+
+.delivery-details input::-webkit-input-placeholder { /* Edge */
+  color: #303030;
+  font-weight: 500;
+}
+
+.delivery-details input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #303030;
+ font-weight: 500;
+}
+
+.delivery-details input::placeholder {
+  color: #303030;
+  font-weight: 500;
+}   
+.deliver-icon {
+    position: absolute;
+    right: 16px;
+    top: 0px;
+    background-color: #30aabc;
+    padding: 6px 15px;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.deliver-icon i{color: #fff;}
+
+    
+.next-btn{margin-top: 20px;}
+.next-btn a {
+    text-align: center;
+    background-color: #30aabc;
+    border-radius: 24px;
+    padding: 8px 0px;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+}
+.custom-date {
+    width: 100%;
+    border-radius: 24px;
+    border-color: #e1e2f1;
+}
+.delivery-add .gm-style .directions-card-medium-large {
+    height: 61px;
+    padding: 10px 11px;
+    display: none !important;
+}
+.details-list {
+    margin-top: 20px;
+    border: 1px solid #e1e2f1;
+    padding: 20px;
+    background-color: #e1e2f1;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 1px #abaeaf;
+}
+.details-list h2 {
+    
+    padding-bottom: 5px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.type-vehicle {
+    padding-top: 13px;
+}
+.type-vehicle select.custom-select {
+    border-radius: 24px;
+    border-color: #e1e2f1;
+}
+.new_delivery {
+    padding-bottom: 23px;
+}
+.delivery-add {position: relative;}
+.select-delivery {position: absolute;}
+.select-delivery input {
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 24px;
+    background-color: #ffffffa3;
+}
+.select-delivery {
+    position: absolute;
+    top: 59px;
+    left: 26px;
+}
+
+
+/*================================================================================*/
+
+
+/*===========================================================DELIVERY HISTORY START*/
+
+.delivery-sec table thead tr th {
+    width: 11%;
+    font-weight: 100;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e1e2f1;
+    color: #131313;
+}
+.delivery-sec table thead tr {
+    background-color: #136e7b;
+    color: #ffff;
+}
+.cvs-btn a {
+    text-decoration: none;
+    background-color: #30aabc;
+    padding: 9px;
+    min-width: 175px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+.date li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.date ul {
+    margin: 26px 0px;
+}
+.date li input {
+    padding: 4px;
+    text-align: center;
+    border-radius: 24px;
+    background-color: #e1e2f1;
+    border-color: #e1e2f1;
+}
+.date .select {
+    width: 97px;
+}
+li.search input {
+    text-align: left;
+    width: 161px;
+}
+/*=====================================================*/
+
+
+
+/*=============================new css*/
