@@ -4,7 +4,7 @@
 	<title>flirt Html</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<meta name="description" content="">
 	<meta name="Keyword" content="">
 	<meta name="author" content="">
@@ -18,186 +18,192 @@
   </head>
   <body>
 	<!-- header Start -->
-	<header class="header_main">
-		<!-- header top start -->
-		<div class="header_top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="head_logo">
-							<a href="#">
+	<div class="home_header_sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-12">
+					<!-- home header top start -->
+					<div class="home_head_top">
+						<div class="home_logo">
+							<a href="index.html">
 								<img src="images/site_logo.png" class="img-fluid" alt="logo">
 							</a>
 						</div>
-						<div class="head_right_menu show_mobile">
-							<ul>
-								<li class="header_login"><a href="#">
-									<span class="usr_img">
-										<img src="images/user_1.jpg">
-									</span>
-									<span class="usr_text">Hello, liv</span>
-									<span class="caret_icon"><i class="fas fa-caret-down"></i></span>
-								</a>
-									<ul class="submenu">
-										<li><a href="#"><i class="fas fa-sign-in-alt"></i>Login</a></li>
-										<li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-										<li><a href="setting.html"><i class="fas fa-user-cog"></i>Setting</a></li>
-									</ul>
-								</li>
+						<div class="home_header_right">
+							<ul class="login_tabs">
+								<li><a class="login_link" href="javascript:void(0);" data-tab="signin_popup">signin</a></li>
+								<li><a class="login_link" href="javascript:void(0);" data-tab="signup_popup">signup</a></li>
 							</ul>
+							<span class="nav_toggle">
+								<i></i>
+								<i></i>
+								<i></i>
+							</span>
 						</div>
 					</div>
-					<div class="col-lg-8">
-						<div class="head_right">
-							<div class="btn_wrap">
-								<a href="#" class="header_btns prem_btn">
-									<i class="fas fa-crown"></i>
-									<span class="text">upgrade to premium</span>
-								</a>
-								<a href="#" class="header_btns credti_btn">
-									<i class="fas fa-database"></i>
-									<span class="text">0 Credits - By some !</span>
-								</a>
-							</div>
-							<div class="head_right_menu show_desktop">
-								<ul>
-									<li class="header_login"><a href="#">
-										<span class="usr_img">
-											<img src="images/user_1.jpg">
-										</span>
-										<span class="usr_text">Hello, liv</span>
-										<span class="caret_icon"><i class="fas fa-caret-down"></i></span>
-									</a>
-										<ul class="submenu">
-											<li><a href="#"><i class="fas fa-sign-in-alt"></i>Login</a></li>
-											<li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-											<li><a href="setting.html"><i class="fas fa-user-cog"></i>Setting</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</div>
+					<!-- home header top End -->
+					<!-- Home navigation Start -->
+					<div class="home_navigation">
+						<ul>
+							<li><a href="index.html">home</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">service</a></li>
+							<li><a href="#">blog</a></li>
+						</ul>
 					</div>
+					<!-- Home navigation End -->
 				</div>
 			</div>
-		</div>
-		<!-- header top End -->
-		<!-- header profile start -->
-		<div class="header_profiles">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-10 col-sm-12 offset-xl-1">
-						<div class="header_carousel owl-carousel owl-theme">
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_1.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
-								</div>
+			<!-- login signup popup start -->
+			<div class="login_popup_wrapper">
+				<div class="container">
+					<!-- login start -->
+					<div class="login_popup login_content" id="signin_popup">
+						<div class="login_form">
+							<div class="form_heading">
+							  <h4>Login To Your Account</h4>
+							  <span class="close_login"><i class="fas fa-times"></i></span>
 							</div>
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_2.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
+							<form>
+								<div class="form_group">
+									<input type="email" id="" placeholder="Email">
 								</div>
-							</div>
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_3.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
+								<div class="form_group">
+									<input type="password" id="" placeholder="Password">
 								</div>
-							</div>
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_4.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_5.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_6.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_7.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_1.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_2.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="h_profiles">
-									<img src="images/carousel/thumb_3.jpg" alt="profile" class="img-fluid">
-									<div class="prof_overlay">
-										<span class="ovelay_icon">
-											<i class="fas fa-plus"></i>
-										</span>
-									</div>
-								</div>
-							</div>
+	                            <div class="form_group forgot_text">
+	                                <a class="forgot_link login_link" href="javascript:void(0);" data-tab="forgot_popup"><span>Forgot Password</span></a>
+	                          	</div>
+								<div class="form_group">
+	                                <button type="submit" class="submit_btn"><span>Sign In </span></button>
+	                            </div>
+							</form>
 						</div>
 					</div>
+					<!-- login End -->
+					<!-- signup start -->
+					<div class="login_popup login_content" id="signup_popup">
+						<div class="login_form">
+							<div class="form_heading">
+							  <h4>Please Create An Account</h4>
+							  <span class="close_login"><i class="fas fa-times"></i></span>
+							</div>
+							<form>
+								<div class="form_group">
+									<select>
+										<option value="">Select year of Birth</option>
+										<option value="">2001</option>
+										<option value="">2000</option>
+										<option value="">1999</option>
+										<option value="">1998</option>
+										<option value="">1997</option>
+										<option value="">1996</option>
+									</select>
+								</div>
+								<div class="form_group">
+									<input type="email" id="" placeholder="Email">
+								</div>
+								<div class="form_group">
+									<input type="password" id="" placeholder="Password">
+								</div>
+	                            <div class="form_group terms_group">
+	                                <div class="check_box">
+	                                	<label>
+	                                		<input type="checkbox" name="terms" value="terms&condition">
+	                                		<span class="c_box"></span>
+	                                		<span class="c_text">I Accept The <a href="#" target="_blank"> Terms & Conditions</a> & <a href="#" target="_blank"> Privacy Policy</a></span>
+										</label>
+	                                </div>
+	                          	</div>
+								<div class="form_group">
+	                                <button type="submit" class="submit_btn"><span>Sign In </span></button>
+	                            </div>
+							</form>
+						</div>
+					</div>
+					<!-- signup End -->
+					<!-- Forgot start -->
+					<div class="login_popup login_content" id="forgot_popup">
+						<div class="login_form">
+							<div class="form_heading">
+							  <h4>Enter Your Registered Email Id</h4>
+							  <span class="close_login"><i class="fas fa-times"></i></span>
+							</div>
+							<form>
+								<div class="form_group">
+									<input type="email" id="" placeholder="Email">
+								</div>
+								<div class="form_group">
+	                                <button type="submit" class="submit_btn"><span>Reset Password</span></button>
+	                            </div>
+							</form>
+						</div>
+					</div>
+					<!-- Forgot End -->
 				</div>
 			</div>
+			<!-- login signup popup End -->
 		</div>
-		<!-- header profile End -->
-	</header>
+	</div>
 	<!-- header End -->
-<!-- Footer section start -->
-	<div class="footer_section">
+
+	<!-- slider End -->
+	<div class="home_slider owl-carousel owl-theme">
+		<div class="item">
+			<div class="home_slides" style="background-image:url('images/slider/slide_1.jpg'); ">
+				<div class="slider_overlay"></div>
+				<!-- slider caption Start -->
+				<div class="slider_caption_wrap">
+					<div class="container">
+						<div class="slider_caption">
+							<div class="caption_left">
+								<h1>Les presentamos a Carolina Henao.</h1>
+								<a href="#" class="slider_btn">ver mas</a>
+							</div>
+							<div class="caption_right">
+								<span class="caption_name">
+									Mojeres
+								</span>
+								<span class="caption_location">
+									---- kalsey london
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slider caption End-->
+			</div>
+		</div>
+		<div class="item">
+			<div class="home_slides" style="background-image:url('images/slider/slide_2.jpg'); ">
+				<div class="slider_overlay"></div>
+				<!-- slider caption Start -->
+				<div class="slider_caption_wrap">
+					<div class="container">
+						<div class="slider_caption">
+							<div class="caption_left">
+								<h1>Les presentamos a Carolina Henao.</h1>
+								<a href="#" class="slider_btn">ver mas</a>
+							</div>
+							<div class="caption_right">
+								<span class="caption_name">
+									Mojeres
+								</span>
+								<span class="caption_location">
+									---- kalsey london
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slider caption End-->
+			</div>
+		</div>
+	</div>
+	<!-- slider End -->
+
+	<!-- Footer section start -->
+	<div class="footer_section home_footer">
 		<span class="footer_collapse">
 			<img src="images/icon/collapse_icon.png">
 			<i class="fas fa-chevron-up"></i>
@@ -206,11 +212,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="footer_logo">
-							<a href="#">
-								<img src="images/site_logo.png">
-							</a>
-						</div> 
 						<div class="footer_menu">
 							<ul>
 								<li><a href="#">Privacy</a></li>
@@ -220,6 +221,11 @@
 								<li><a href="#">community guidlines</a></li>
 							</ul>
 						</div> 
+						<div class="footer_text">
+							<p>
+								Demo.com is an adult social flirting platform for men and women who are looking for a fun, flirty or exciting contact. Every day, hundreds of new members sign up. Based on your profile settings, you will receive match suggestions. You can also use our search functionality and browse for profiles yourself. Demo.com is designed for adult pleasure and entertainmentand optimised for desktops, mobile phones and tablets.Profiles are partly fictional, physical arrangements with these angel profiles are not possible. We strongly advise you to read our Terms and Conditions before using our Service.
+							</p>
+						</div>
 						<div class="copyright_text">
 							<p>All right reserved 2019</p>
 						</div> 

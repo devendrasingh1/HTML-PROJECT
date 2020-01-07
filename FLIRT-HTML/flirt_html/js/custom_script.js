@@ -2,9 +2,8 @@
 	"use strict";
 	//home slider height
 	var wind_h = $(window).outerHeight();
-	var wind_h_n = wind_h - 120
 	if ($(window).width () > 991){
-		$(".home_slider_section").css('min-height',wind_h_n);
+		$(".home_slides").css('min-height',wind_h);
 	}
 	//Accordion js
 	$(".panel_heading a").on("click", function(e){
@@ -38,24 +37,32 @@
 		$("#"+tab_data).addClass("active");
 	});
 	//login tabs
-	$('.login_link').on('click', function(){
+	$('.login_link').on('click', function(e){
+		e.stopPropagation();
 		$(".login_content").removeClass("active");
 		var tab_data = $(this).attr("data-tab");
 		$('.login_link').removeClass("active");
 		$(this).addClass("active");
 		$("#"+tab_data).addClass("active");
 	});
+	$('.close_login').click(function(){
+ 		$(this).parents(".login_content").removeClass("active");
+ 		$('.login_link').removeClass("active");
+	});
 	//dropdown menu js
-	$('.menu_toggle').on('click', function(){
-		$(".dropdown_navs").toggleClass("menu_open");
-		$(".dropdown_navs").slideToggle(300);
+	$('.nav_toggle').on('click', function(){
+		$(".home_navigation").toggleClass("menu_open");
+		$(".home_navigation").slideToggle(300);
+	});
+	//dropdown menu js
+	$('.widger_title').on('click', function(){
+		$(this).next(".widget_collapes").slideToggle(300);
 	});
 	//Responsive Mobile Menu
 	if ($(window).width () < 991){
-		$(".app_navigation > ul > li> ul").parents("li").addClass("dropdown_toggle");
-		$(".app_navigation > ul > li> ul > li > ul").parents("li").addClass("dropdown_toggle");
+		$(".home_navigation > ul > li> ul").parents("li").addClass("dropdown_toggle");
 		$(".dropdown_toggle").append("<span class='caret_down'><i class='fas fa-chevron-down'></i></span>");
-		$(".app_navigation ul li").children(".caret_down").on("click",function(){
+		$(".home_navigation ul li").children(".caret_down").on("click",function(){
 			$(this).toggleClass("caret_up");
 			$(this).prev("ul").slideToggle();
 		});
@@ -105,7 +112,7 @@
 	    dots: false,
 	    nav: true,
 	    navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
-	    autoplay: true,
+	    autoplay: false,
 	    smartSpeed: 200,
 	    slideSpeed : 500,
 	    slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
@@ -215,35 +222,42 @@
 		    }
 		});
 	}
-	
-	//progressbar js
-	$(window).on('load', function() {
-		$(".progress_panel").each(function() {
-			var slide = $(this).children(".prog_slide");
-			var slide_val = slide.attr("slide-value");
-		  //slide amimate
-		 slide.animate({
-		    'width': slide_val+'%',
-		    easing: 'ease'
-		  }, 2000);
+	//home slider
+	if ($(".home_slider").length > 0) {
+		$(".home_slider").owlCarousel({
+			mode:"fade",
+			items:1,
+			loop:true,
+			margin:0,
+			autoplay:true,
+			autoplayTimeout:4000,
+			autoplaySpeed:1500,
+			smartSpeed:1500,
+			dots:false,
+			nav:true,
+			navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+			responsive:{
+				0:{
+		            dots:true,
+		            nav:false,
+		        },
+		        768:{
+		            dots:false,
+		            nav:true,
+		        },
+		    }
+			
 		});
-	});
-	//Jqeury counter
-	$('.number_counter').each(function () {
-		$(this).prop('Counter',0).animate({
-			Counter: $(this).text()
-		}, {
-			duration: 4000,
-			easing: 'linear',
-			step: function (now) {
-				$(this).text(Math.ceil(now));
-			}
-		});
-	});
+	}
    //footer collapse 
 	$('.footer_collapse').on('click', function(){
 		$(".footer_section").toggleClass("close_footer");
 		$(".footer_section_inner").slideToggle(300);
+	});
+	//footer collapse 
+	$('.filter_collapse').on('click', function(){
+		$(".filter_box_wrap").toggleClass("close_filter");
+		$(this).prev(".filter_box").slideToggle(300);	
 	});
 	//slider ifo collapse
 	$('.profile_info_btn').on('click', function(){
@@ -261,61 +275,28 @@
 	$('.chat_close').on('click', function(){
 		$(".chatting_wrapper").removeClass("sidebar_open");
 	});
-	//add dymanic field on click
-	var l = 1;
-	$('.add_more_btn').on('click', function(){
-		l++;
-		var html = '<div class="row more_field_row" id="row'+l+'">\
-        <div class="col-xl-4 col-md-6">\
-            <div class="form_group">\
-                <div class="app_boxes app_input">\
-                    <h4>Title</h4>\
-                    <input type="text" name="user_id" placeholder="Enter Title">\
-                </div>\
-            </div>\
-        </div>\
-        <div class="col-xl-4 col-md-6">\
-            <div class="form_group">\
-                <div class="app_boxes">\
-                    <h4>Icon</h4>\
-                    <div class="input_group">\
-                        <div class="upload_file_dv">\
-                            <label class="upload_label">\
-                                <input type="file" name="" class="upload_input">\
-                                <span class="upload_text"><i class="fas fa-cloud-upload-alt"></i>Upload Icon</span>\
-                                <span class="img_path"></span>\
-                            </label>\
-                        </div>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-        <div class="col-xl-4 col-md-6">\
-            <div class="form_group">\
-                <div class="app_boxes app_input">\
-                    <h4>Price</h4>\
-                    <input type="text" name="user_id" placeholder="Enter Price">\
-                </div>\
-            </div>\
-        </div>\
-        <button type="button" value="Remove" class="remove_btn" id="'+l+'">\
-        <i class="fas fa-times"></i>\
-        </button>\
-		</div>';
-		$('.add_more_form').append(html);
-		 //file upload drag $ drop code
-		  $('.upload_input').change(function() {
-		    //var i = $(this).parents('.upload_label').clone();
-		    var file = $(this)[0].files[0].name;
-		    $(this).next(".upload_text").next('.img_path').html(file);
-		  });
+	//custom selectpicker
+	$(".custom_select select").each(function(){
+		$(this).after("<span class='select_holder'></span>");
 	});
-	//remove field
-	$(document).on('click', '.remove_btn', function(){
-		//var button_id = $(this).attr("id");
-		var remove_prnt = $(this).parents(".more_field_row");
-		$(remove_prnt).remove();
-	});
+	$(".custom_select select").change(function(){
+		var selectedOption = $(this).find(":selected").text();
+		$(this).next(".select_holder").text(selectedOption);
+	}).trigger('change');
+	//Age range slider
+	  $( function() {
+	    $( ".range_slider" ).slider({
+	      range: true,
+	      min: 0,
+	      max: 100,
+	      values: [ 0, 50 ],
+	      slide: function( event, ui ) {
+	        $( "#amount" ).val(  + ui.values[ 0 ] + "-" + ui.values[ 1 ] );
+	      }
+	    });
+	    $( "#amount" ).val(+ $( ".range_slider" ).slider( "values", 0 ) +
+	      " - " + $( ".range_slider" ).slider( "values", 1 ) );
+	  });
 })(jQuery);
 //copy to clip board on click
 function copybutton() {
