@@ -192,6 +192,21 @@
 	    sync1.data('owl.carousel').to(number, 300, true);
 	  });
 	});
+	//home slider
+	if ($(".gallery_slider").length > 0) {
+		$(".gallery_slider").owlCarousel({
+			mode:"fade",
+			items:1,
+			loop:true,
+			margin:10,
+			autoplay:false,
+			autoplayTimeout:3000,
+			autoplaySpeed:1500,
+			smartSpeed:1000,
+			dots:false,
+			nav:true,
+		});
+	}
 	//activity tab slider
 	if ($("#act_tab_carousel").length > 0) {
 		$("#act_tab_carousel").owlCarousel({
@@ -333,13 +348,15 @@
 		$(this).addClass("active");
 	});
 	//flipster js script
-	$(".flipster").flipster({
-	  style: 'flat',
-	  spacing: -0.25
-	});
-	$(window).on('load', function() {
-		$(".flipster").addClass("show_flipster");
-	});
+	if($(".flipster").length > 0){
+		$(".flipster").flipster({
+		  style: 'flat',
+		  spacing: -0.25
+		});
+		$(window).on('load', function() {
+			$(".flipster").addClass("show_flipster");
+		});
+	}
 })(jQuery);
 //copy to clip board on click
 function copybutton() {
